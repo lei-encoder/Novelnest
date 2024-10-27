@@ -1,0 +1,51 @@
+/* Modal background */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* Centering the modal */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Increase width to 80% */
+  max-width: 1000px; /* Increase max width to 1000px */
+  height: 600px; /* Set a fixed height */
+  overflow: auto; /* Enable scroll if content exceeds height */
+  display: flex; /* Use flexbox to arrange content */
+}
+
+#iframe-container {
+  flex: 2; /* Increase space for the iframe */
+}
+
+.summary {
+  flex: 1; /* Adjust space for the summary */
+  padding: 20px; /* Add padding for aesthetics */
+}
+
+/* Dark mode styles */
+body.dark-mode .modal-content {
+  background-color: #333; /* Dark background for dark mode */
+  color: white; /* Light text for dark mode */
+}
+
+body.dark-mode .modal {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker modal background */
+}
+
+
+@media (max-width: 600px) {
+  .modal-content {
+      width: 95%; /* Smaller width for small screens */
+      max-width: none; /* Remove max-width restriction */
+  }
+}

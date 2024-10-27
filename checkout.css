@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.checkout-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff; /* White background for the container */
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px; /* Larger font size */
+    margin-bottom: 20px;
+    color: #ff6600; /* Accent color for the heading */
+}
+
+.cart-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between; /* Space between item name and price */
+}
+
+
+.checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6600; /* Main button color */
+    color: white;
+    border: none;
+    font-size: 18px; /* Larger button text */
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    margin-top: 10px; /* Spacing above the button */
+}
+
+.checkout-btn:hover {
+    background-color: #ff3300; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.thank-you-message {
+    margin: 20px 0;
+    text-align: center;
+    background-color: #e7ffe7; /* Light green background for thank you message */
+    border: 1px solid #b3ffb3; /* Green border */
+    padding: 15px;
+    border-radius: 5px;
+    display: none; /* Initially hidden */
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}

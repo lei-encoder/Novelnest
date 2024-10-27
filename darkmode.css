@@ -1,0 +1,533 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+}
+
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 70px;
+  margin-top: 80px;
+}
+
+.content p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+
+
+/* PRODUCTS */
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.product-category {
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+
+.product-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+
+
+/* Hide scrollbars for Chrome, Safari, and Opera */
+.product-container::-webkit-scrollbar {
+  width: 0; /* Hides vertical scrollbar */
+  height: 0; /* Hides horizontal scrollbar */
+}
+
+/* Custom scrollbar style */
+.product-container::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar thumb color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.product-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color on hover */
+}
+
+
+.product-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 540px;
+  margin-right: 40px;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discount-tag {
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ff7d7d;
+  right: 10px;
+  top: 10px;
+  text-transform: capitalize;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.product-card:hover .card-btn {
+  opacity: 1;
+}
+
+.card-btn:hover {
+  background: #ff7d7d;
+  color: #fff;
+}
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.product-brand {
+  text-transform: uppercase;
+}
+
+.product-short-description {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+/* Set link color to default blue and remove underline */
+.product-short-description a {
+  color: black; /* Sets the link color to standard blue */
+  text-decoration: none; /* Removes underline */
+}
+
+/* Optional: Add hover effect */
+.product-short-description a:hover {
+  text-decoration: underline; /* Adds underline on hover */
+  color: darkblue; /* Changes the color on hover if desired */
+}
+
+
+.price {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.actual-price {
+  margin-left: 20px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+
+
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-color: #685cfe;
+  --main-transition: 0.5s all ease-in-out;
+}
+body {
+  background-color: #f0f0f0;
+}
+::selection {
+  color: white;
+  background: var(--main-color);
+}
+/* End Global Rules */
+/* Start Sidebar */
+.sidebar {
+  width: 100px;
+  background-color: #fff;
+  padding: 20px;
+  position: fixed;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  transition: var(--main-transition);
+  text-align: center;
+}
+.sidebar:hover {
+  width: 300px;
+}
+.sidebar .dots {
+  width: 60px;
+}
+.sidebar .profile {
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+  color: #fff;
+  background-color: var(--main-color);
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  margin: 30px 0;
+}
+.sidebar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sidebar ul {
+  padding-bottom: 30px;
+  list-style: none;
+}
+.sidebar ul span {
+  color: #8f99cc;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  display: block;
+  padding-bottom: 20px;
+}
+.sidebar ul li {
+  padding-left: 10px;
+  transition: var(--main-transition);
+}
+.sidebar:hover ul li {
+  padding-left: 0px;
+}
+.sidebar ul li a {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  transition: 0.3s all ease-in-out;
+  font-size: 16px;
+  width: 300px;
+  color: #555e8f;
+  font-weight: 500;
+  text-decoration: none;
+}
+.sidebar:hover a {
+  width: 100%;
+}
+.sidebar ul li a:hover {
+  background-color: #ebf0fe;
+  color: var(--main-color);
+}
+.sidebar ul li a ion-icon {
+  font-size: 22px;
+}
+.sidebar ul li.noti a ion-icon {
+  position: relative;
+}
+.sidebar ul li.noti a ion-icon::before {
+  content: " ";
+  position: absolute;
+  right: 0;
+  background-color: #3761ee;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.sidebar ul li.likes a ion-icon {
+  position: relative;
+}
+.sidebar ul li.likes a ion-icon::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  background-color: #e45447;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.sidebar ul li a p {
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--main-transition);
+}
+.sidebar:hover ul li a p {
+  visibility: visible;
+  opacity: 1;
+}
+.sidebar ul li.switch-theme {
+  position: relative;
+}
+.sidebar ul li.switch-theme button {
+  background-color: #ddd;
+  border: none;
+  border-radius: 50px;
+  height: 25px;
+  width: 50px;
+  padding: 5px;
+  position: absolute;
+  right: 30px;
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--main-transition);
+}
+.sidebar:hover ul li.switch-theme button {
+  visibility: visible;
+  opacity: 1;
+}
+.sidebar ul li.switch-theme button .circle {
+  border-radius: 50%;
+  background-color: #fff;
+  height: 100%;
+  width: 15px;
+}
+
+body.light-mode {
+  background-color: #ffffff; /* White background for the whole site */
+  color: #000000; /* Default text color for light mode */
+}
+
+body.light-mode .sidebar {
+  background-color: #f0f0f0; /* Light background for sidebar */
+  color: #000000; /* Black text color in light mode */
+}
+body.dark-mode {
+  background-color: #121212; /* Dark background for the whole site */
+  color: #ffffff; /* White text color for the whole site */
+}
+
+body.dark-mode .sidebar {
+  background-color: #333; /* Dark background for sidebar */
+  color: #ffffff; /* White text color in dark mode */
+}
+
+/* Default link styling */
+.product-short-description a {
+  color: inherit; /* This will make the link color inherit from its parent element */
+  text-decoration: none; /* Removes underline */
+}
+
+/* Optional: Add hover effect */
+.product-short-description a:hover {
+  text-decoration: underline; /* Adds underline on hover */
+  color: darkblue; /* Optional: Change the color on hover */
+}
+
+/* Dark mode styles */
+body.dark-mode .product-short-description a {
+  color: white; /* Change link color to white in dark mode */
+}
+
+body.dark-mode .product-brand {
+  color: white; /* Optional: Change brand title color to white in dark mode */
+}
+
+body.dark-mode .product-short-description {
+  color: rgba(255, 255, 255, 0.5); /* Optional: Change paragraph color in dark mode */
+}
+
+
+/* darkmode.css */
+
+body.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: white; /* Light text */
+}
+
+.sidebar.dark-mode {
+  background-color: #1f1f1f; /* Dark sidebar */
+}
+
+.product-card.dark-mode {
+  background-color: #282828; /* Dark product card */
+  color: white; /* Light text in product card */
+}
+
+.button {
+  margin-top: -270px;
+}
+.see-more-btn {
+
+  margin-left: 300px;
+  position: relative;
+  background-color: #8b5c2d; /* Warm, book-like brown color */
+  color: #ffffff; /* White text for contrast */
+  border: none; /* No border for a clean look */
+  padding: 12px 24px; /* Larger padding for a premium feel */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 8px; /* Rounded corners for a soft look */
+  font-family: 'Georgia', serif; /* Bookish font */
+  font-size: 16px; /* Slightly larger text for readability */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.see-more-btn:hover {
+  background-color: #a5703b; /* Lighter brown on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+.buttonn {
+  margin-top: -290px;
+}
+.see-more-btnn {
+
+  margin-left: 300px;
+  position: relative;
+  background-color: #8b5c2d; /* Warm, book-like brown color */
+  color: #ffffff; /* White text for contrast */
+  border: none; /* No border for a clean look */
+  padding: 12px 24px; /* Larger padding for a premium feel */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 8px; /* Rounded corners for a soft look */
+  font-family: 'Georgia', serif; /* Bookish font */
+  font-size: 16px; /* Slightly larger text for readability */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.see-more-btnn:hover {
+  background-color: #a5703b; /* Lighter brown on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+/* Add other dark mode styles as needed */
+
+/* General styles for the checkout button */
+.checkout-btn {
+  position:fixed; /* Ensures the button stays fixed relative to the viewport */
+  top: 20px;  /* Distance from the top */
+  right: 20px;  /* Distance from the right */
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Makes sure it's above other elements */
+}
+
+/* Hover effect for the button */
+.checkout-btn:hover {
+  background-color: #ff3300;
+  transform: scale(1.05);
+}
+
+
+/* Styles for light mode */
+body.light-mode .checkout-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+body.light-mode .checkout-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for dark mode */
+body.dark-mode .checkout-btn {
+  background-color: #ff6600;
+  color: white;
+}
+
+body.dark-mode .checkout-btn:hover {
+  background-color: #ff3300;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 600px) {
+  .checkout-btn {
+      font-size: 14px;
+      padding: 10px 20px;
+  }
+}

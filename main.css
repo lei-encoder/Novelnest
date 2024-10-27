@@ -1,0 +1,582 @@
+/* Background container styling */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Default height for larger screens */
+  overflow: hidden; /* Hides parts of the image that slide out */
+  margin: 0%;
+}
+
+/* New styling for the background image */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition for opacity and scaling */
+  opacity: 1; /* Ensure the image is initially visible */
+  filter: brightness(0.8);
+}
+
+/* Company name styling */
+.company-name {
+  position: absolute;
+  top: 2%; /* Adjust this value to float it closer to the top */
+  left: 49%;
+  transform: translateX(-50%); /* Center it horizontally */
+  color: white; /* Text color */
+  font-size: 2vw; /* Responsive font size */
+  font-weight: bold; /* Font weight */
+  font-family: 'lato';
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better contrast */
+  z-index: 2; /* Ensure the company name is on top of the images */
+  text-align: center; /* Center text */
+}
+
+/* Styling for the text overlay */
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4vw; /* Responsive font size based on viewport width */
+  font-weight:bold;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Stronger shadow for contrast */
+  z-index: 2; /* Ensures the text is on top of the images */
+  text-align: center; /* Center text for better presentation */
+}
+
+/* Additional styles... */
+.adventure-line {
+  margin: 10px auto; /* Center the line below the adventure text */
+  width: 50%; /* Length of the line */
+  border: none; /* No default border */
+  height: 1px; /* Thickness of the line */
+  background-color: white; /* Line color */
+}
+
+/* Additional text styling */
+.secondary-text {
+  color: white; /* Text color */
+  font-size: 2vw; /* Responsive font size */
+  text-align: center; /* Center the text */
+  margin-top: 10px; /* Space between the line and the text */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Optional shadow for contrast */
+}
+
+.shop-now {
+  position: absolute; /* Position the text absolutely */
+  bottom: 69px; /* Move text 10px from the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  color: black;
+  font-size: 20px; /* Responsive font size based on viewport width */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Stronger shadow for contrast */
+  z-index: 2; /* Ensures the text is on top of the images */
+  text-align: center; /* Center text for better presentation */
+  text-decoration: none;
+  background-color: white;
+  padding: 15px 40px;
+  font-weight: 700;
+}
+
+.find-out {
+  position: absolute; /* Position the text absolutely */
+  bottom: -1600px; /* Move text 10px from the bottom */
+  left: 68%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  color: white;
+  font-size: 20px; /* Responsive font size based on viewport width */
+  z-index: 2; /* Ensures the text is on top of the images */
+  text-align: center; /* Center text for better presentation */
+  text-decoration: none;
+  background-color: black;
+  padding: 15px 40px;
+  font-weight: 700;
+  font-family: 'lato';
+}
+
+
+
+/* Background container styling */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Default height for larger screens */
+  overflow: hidden; /* Hides parts of the image that slide out */
+  margin: 0 0 20px; /* Add space below the image container */
+}
+
+/* New company2-name styling */
+.company2-name {
+  text-align: left; /* Align text to the left */
+  font-size: 30px; /* Responsive font size */
+  color: black; /* Text color */
+  margin-top: 50px; /* Space above the text */
+  margin-bottom: 10px; /* Space below the text */
+  margin-left: 130px; /* Increase space from the left edge */
+  font-family: 'lato';
+}
+
+/* Styling for the line below company2-name */
+.company2-line {
+  margin: 0; /* Remove auto margins */
+  width: 85%; /* Adjust width as needed */
+  height: 2px; /* Thickness of the line */
+  border: none; /* No default border */
+  background-color: gray; /* Line color */
+  display: block; /* Ensure it's a block element for proper alignment */
+  margin-left: 130px; /* Increase space from the left edge */
+}
+
+.company3-line {
+  margin: 0; /* Remove auto margins */
+  width: 85%; /* Adjust width as needed */
+  height: 2px; /* Thickness of the line */
+  border: none; /* No default border */
+  background-color: gray; /* Line color */
+  display: block; /* Ensure it's a block element for proper alignment */
+  margin-left: 130px; /* Increase space from the left edge */
+  margin-top: 40px;
+}
+
+.image-item a {
+  display: block; /* Makes the link fill the image-item */
+  text-decoration: none; /* Removes underline from the text */
+  color: inherit; /* Keeps the text color the same as the overlay */
+}
+
+
+
+/* Image and text container */
+.image-text-container {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center items vertically */
+  margin-top: 40px; /* Increased space above the container */
+  margin-left: 40px;
+}
+
+/* Front image styling */
+.front-image {
+  /* Adjust size as needed */
+  width: 600px;
+  height: 400px; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between image and text */
+  margin-left: 90px;
+}
+
+.heading {
+  color: black;
+  font-size: 32px;
+  font-family: 'lato';
+}
+/* Text styling */
+.company-text {
+  font-size: 25px; /* Responsive font size */
+  color: white; /* Text color */
+  text-align: center; /* Center text horizontally */
+  flex: 1; /* Allow the text to take up available space */
+  margin-top: -10px; /* Move text higher if necessary */
+  padding-top: 5px; /* Add padding if you want to adjust positioning */
+}
+.heading2 {
+  margin-top: 100px; /* Space above the text */
+  margin-bottom: 50px; /* Space below the text */
+  margin-left: 130px;
+  font-size: 40px;
+  font-family: 'lato';
+  color: black
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: flex-start; /* Aligns the gallery to the left */
+  padding: 20px;
+}
+
+.gallery {
+  display: flex; /* Use flexbox to create a horizontal layout */
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  gap: 1px; /* Spacing between images */
+}
+
+.gallery img {
+  margin-left: 110px;
+  width: 250px;  /* Fixed width */
+  height: 300px; /* Fixed height */
+  object-fit: cover; /* Ensures images cover the entire space without distortion */
+  border-radius: 8px; /* Optional: adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds shadow to images */
+}
+
+.image2-container {
+  display: flex; /* Use flexbox */
+  align-items: left; /* left items vertically */
+  margin-top: 100px; /* Increased space above the container */
+  margin-left: 130px;
+  height: 900px;
+  margin-right: 20px; /* Space between image and text */
+ 
+}
+
+.heading3 {
+  text-align: center;          /* Center align text */
+    font-size: 60px;            /* Set font size */
+    font-family: 'Lato';        /* Font family */
+    margin-left: 700px;          /* Pushes the heading to the right */
+    margin-top: -600px;          /* Moves the text up by 20px (adjust as needed) */
+    margin-bottom: 600px;
+}
+
+
+.message-text {
+  font-size: 30px; /* Responsive font size */
+  text-align: center; /* Center text horizontally */
+  flex: 1; /* Allow the text to take up available space */
+  margin-left: 700px;
+  margin-top: -550px; /* Move text higher if necessary */
+  margin-bottom: 600px; 
+  padding-top: 5px; /* Add padding if you want to adjust positioning */
+}
+
+/* Light Mode */
+body.light-mode .message-text {
+  color: black; /* Black text in light mode */
+}
+
+/* Dark Mode */
+body.dark-mode .message-text {
+  color: white; /* White text in dark mode */
+}
+
+
+.image3-container {
+  margin-left: 30px;
+  margin-bottom: 200px;
+  margin-top: -200px;
+  width: 100%;
+  height: 450px; /* O anuman ang gusto mong height */
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.image-item {
+  position: relative; /* Para sa positioning ng overlay */
+}
+
+.image3-container img {
+  width: 500px; /* Itakda ang width sa 300px */
+  height: 500px; /* I-adjust ang height para mapanatili ang aspect ratio */
+  object-fit: cover; /* Para ma-fit ang image */
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.684);
+  transition: transform ease-in-out 0.5s; /* Animation effect para sa image */
+  filter: brightness(0.7);
+}
+
+.image3-container img:hover {
+  transform: scale(1.05); /* I-zoom ang image kapag hover */
+}
+
+.image-overlay {
+  position: absolute; /* Absolute positioning ng text overlay */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%) scale(1); /* Adjust position para ma-center */
+  color: white; /* Kulay ng text */
+  font-size: 50px; /* Suwabe ng font size */
+  font-family: 'lato';
+  font-weight: bold;
+  text-align: center; /* Center text */
+  padding: 10px; /* Padding */
+  border-radius: 5px; /* Optional: rounded corners */
+  width: 80%; /* Optional: limit the width of the overlay */
+  transition: transform ease-in-out 0.5s; /* Animation effect para sa overlay */
+}
+
+.image-item:hover .image-overlay {
+  transform: translate(-50%, -50%) scale(1.05); /* Zoom in ang text overlay kapag hover */
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-color: #685cfe;
+  --main-transition: 0.5s all ease-in-out;
+}
+body {
+  background-color: #f0f0f0;
+}
+::selection {
+  color: white;
+  background: var(--main-color);
+}
+/* End Global Rules */
+/* Start Sidebar */
+.sidebar {
+  width: 100px;
+  background-color: #fff;
+  padding: 20px;
+  position: fixed;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  transition: var(--main-transition);
+  text-align: center;
+  z-index: 10;
+}
+.sidebar:hover {
+  width: 300px;
+}
+.sidebar .dots {
+  width: 60px;
+}
+.sidebar .profile {
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+  color: #fff;
+  background-color: var(--main-color);
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  margin: 30px 0;
+}
+.sidebar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sidebar ul {
+  padding-bottom: 30px;
+  list-style: none;
+}
+.sidebar ul span {
+  color: #8f99cc;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  display: block;
+  padding-bottom: 20px;
+}
+.sidebar ul li {
+  padding-left: 10px;
+  transition: var(--main-transition);
+}
+.sidebar:hover ul li {
+  padding-left: 0px;
+}
+.sidebar ul li a {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  transition: 0.3s all ease-in-out;
+  font-size: 16px;
+  width: 300px;
+  color: #555e8f;
+  font-weight: 500;
+  text-decoration: none;
+}
+.sidebar:hover a {
+  width: 100%;
+}
+.sidebar ul li a:hover {
+  background-color: #ebf0fe;
+  color: var(--main-color);
+}
+.sidebar ul li a ion-icon {
+  font-size: 22px;
+}
+.sidebar ul li.noti a ion-icon {
+  position: relative;
+}
+.sidebar ul li.noti a ion-icon::before {
+  content: " ";
+  position: absolute;
+  right: 0;
+  background-color: #3761ee;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.sidebar ul li.likes a ion-icon {
+  position: relative;
+}
+.sidebar ul li.likes a ion-icon::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  background-color: #e45447;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.sidebar ul li a p {
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--main-transition);
+}
+.sidebar:hover ul li a p {
+  visibility: visible;
+  opacity: 1;
+}
+.sidebar ul li.switch-theme {
+  position: relative;
+}
+.sidebar ul li.switch-theme button {
+  background-color: #ddd;
+  border: none;
+  border-radius: 50px;
+  height: 25px;
+  width: 50px;
+  padding: 5px;
+  position: absolute;
+  right: 30px;
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--main-transition);
+}
+.sidebar:hover ul li.switch-theme button {
+  visibility: visible;
+  opacity: 1;
+}
+.sidebar ul li.switch-theme button .circle {
+  border-radius: 50%;
+  background-color: #fff;
+  height: 100%;
+  width: 15px;
+}
+
+/* End Sidebar */
+/* Light Mode (default) */
+body.light-mode {
+  background-color: #ffffff; /* White background for the whole site */
+  color: #000000; /* Default text color for light mode */
+}
+
+body.light-mode .sidebar {
+  background-color: #f0f0f0; /* Light background for sidebar */
+  color: #000000; /* Black text color in light mode */
+}
+
+/* Set specific text colors for light mode */
+.company-text,
+.heading,
+.heading2,
+.company2-name {
+  background-color: transparent; /* No background color */
+  color: #000000; /* Black text for light mode */
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212; /* Dark background for the whole site */
+  color: #ffffff; /* White text color for the whole site */
+}
+
+body.dark-mode .sidebar {
+  background-color: #333; /* Dark background for sidebar */
+  color: #ffffff; /* White text color in dark mode */
+}
+
+/* Ensure the text inside company-text is white in dark mode */
+body.dark-mode .company-text,
+body.dark-mode .heading,
+body.dark-mode .heading2,
+body.dark-mode .company2-name {
+  background-color: transparent; /* No background color */
+  color: #ffffff; /* White text color for dark mode */
+}
+
+/* Ensure the specific text is black in light mode */
+body.light-mode .company-text,
+body.light-mode .heading,
+body.light-mode .heading2,
+body.light-mode .company2-name {
+  color: #000000; /* Black text for light mode */
+}
+
+/* Ensure button text remains white in dark mode and black in light mode */
+body.dark-mode .find-out-more {
+  color: #ffffff; /* White text for the button in dark mode */
+}
+
+body.light-mode .find-out-more {
+  color: #000000; /* Black text for the button in light mode */
+}
+
+
+.footer {
+    background-color: #35424a; /* Dark gray background */
+    color: #ffffff; /* White text color */
+    padding: 40px 20px; /* Padding for top/bottom and left/right */
+    text-align: center;
+    border-top: 4px solid #e74c3c; /* Top border for emphasis */
+    font-family: 'Arial', sans-serif; /* Font style */
+}
+
+.footer-content {
+    margin-bottom: 20px; /* Spacing below footer content */
+}
+
+.footer-content h3 {
+    font-size: 24px; /* Larger font size for the title */
+    margin-bottom: 10px; /* Spacing below the title */
+}
+
+.footer-icons a {
+    margin: 0 15px; /* Spacing between icons */
+}
+
+.footer-icons img {
+    width: 30px; /* Adjust icon size */
+    height: 30px;
+}
+
+.footer-bottom {
+    margin-top: 20px; /* Spacing above the bottom text */
+    font-size: 14px; /* Smaller font size */
+    opacity: 0.8; /* Slight transparency for subtlety */
+}
+/* Styles for mobile devices */
+@media (max-width: 600px) {
+  body {
+      font-size: 16px;
+  }
+  .container {
+      flex-direction: column;
+  }
+}
+
+/* Styles for tablets and larger screens */
+@media (min-width: 601px) {
+  body {
+      font-size: 18px;
+  }
+  .container {
+      flex-direction: row;
+  }
+}
+

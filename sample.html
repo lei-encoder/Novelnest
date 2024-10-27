@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <style>
+        .cart-icon {
+            position: relative;
+            display: inline-block;
+        }
+        .cart-count {
+            position: absolute;
+            top: -5px;
+            right: -10px;
+            background: red;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 6px;
+        }
+    </style>
+</head>
+<body>
+
+<section class="product"> 
+    <h2 class="product-category">NEW RELEASE</h2>
+    <div class="product-container">
+        <!-- Your product cards here -->
+        <div class="product-card">
+            <div class="product-image">
+                <button class="card-btn" onclick="addToCart('Identity Unknown (Kay Scarpetta Series #28)')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="cart-icon">
+    <span class="cart-count" id="cartCount">0</span>
+    <img src="path/to/cart-icon.png" alt="Cart" />
+</div>
+
+<script>
+    let cart = [];
+    let cartCount = document.getElementById('cartCount');
+
+    function addToCart(productName) {
+        cart.push(productName);
+        cartCount.innerText = cart.length;
+        alert(`${productName} has been added to your cart!`);
+    }
+</script>
+
+</body>
+</html>

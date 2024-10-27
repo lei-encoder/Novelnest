@@ -1,0 +1,134 @@
+/* General Styling */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #f9f7f1; /* Light background */
+    color: #333; /* Dark text color */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+}
+
+/* Wallet Header */
+.wallet-header {
+    background-color: #8b4513; /* A brown, book-like header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+}
+
+.wallet-header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.wallet-header p {
+    font-size: 18px;
+}
+
+/* Wallet Container */
+.wallet-container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Dark Mode for Wallet Container */
+body.dark-mode .wallet-container {
+    background-color: #242424; /* Dark container */
+}
+
+/* Wallet Balance Section */
+.wallet-balance {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wallet-balance h2 {
+    font-size: 24px;
+    color: #8b4513;
+}
+
+.wallet-balance p {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Dark Mode for Wallet Balance Text */
+body.dark-mode .wallet-balance h2 {
+    color: #c2a57c; /* Lighter text color */
+}
+
+body.dark-mode .wallet-balance p {
+    color: #e0e0e0; /* Light color for dark mode */
+}
+
+/* Payment Options Section */
+.payment-options {
+    margin-top: 30px;
+}
+
+.payment-options h3 {
+    font-size: 24px;
+    color: #8b4513;
+}
+
+.payment-options ul {
+    list-style: none;
+    padding: 0;
+}
+
+.payment-options li {
+    background-color: #f4f4f4;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode for Payment Options */
+body.dark-mode .payment-options li {
+    background-color: #1e1e1e; /* Dark background for items */
+    color: #e0e0e0; /* Light text color */
+}
+
+/* Wallet Actions */
+.wallet-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.wallet-actions button {
+    background-color: #8b4513;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.wallet-actions button:hover {
+    background-color: #5a3210;
+}
+
+/* Theme Switcher */
+.theme-switcher {
+    margin-top: 20px;
+    text-align: center;
+}

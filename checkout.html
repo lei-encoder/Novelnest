@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout.css"> <!-- Your improved CSS file -->
+    <title>Checkout</title>
+    <script src="checkout.js" defer></script> <!-- Link your JS file -->
+</head>
+<body>
+    <div class="checkout-container">
+        <h1>Checkout</h1>
+        <div id="cart-items">
+            <!-- Cart items will be displayed here -->
+        </div>
+        
+        <button class="checkout-btn" id="checkout-btn">Checkout</button>
+        <div id="thank-you-message" class="thank-you-message" style="display:none;">
+            <h2>Thank You for Your Purchase!</h2>
+            <p>Your order has been confirmed. We appreciate your business!</p>
+        </div>
+        <button onclick="window.location.href='book.html';">Continue Shopping</button>
+    </div>
+</body>
+</html>

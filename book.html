@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Novelnest - Most Popular Books</title>
+  <link rel="stylesheet" href="main.css" /> <!-- Link to your main CSS -->
+  <link rel="stylesheet" href="darkmode.css" /> <!-- Link to dark mode CSS -->
+  <link rel="icon" type="image/png" href="images/novelnest.png">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="dots">
+      <img src="images/dots.png" alt="dots" />
+    </div>
+    <div class="profile">
+      <ion-icon name="person-outline"></ion-icon>
+    </div>
+    <ul>
+      <span>Home</span>
+      <li>
+        <a href="main.html">
+          <ion-icon name="home-outline"></ion-icon>
+          <p>Home</p>
+        </a>
+      </li>
+      <li>
+        <a href="book.html">
+          <ion-icon name="stats-chart-outline"></ion-icon>
+          <p>Prices</p>
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <span>Content</span>
+      <li class="noti">
+        <a href="notification.html">
+          <ion-icon name="notifications-outline"></ion-icon>
+          <p>Notifications</p>
+        </a>
+      </li>
+      <li>
+        <a href="wallet.html">
+          <ion-icon name="wallet-outline"></ion-icon>
+          <p>Wallets</p>
+        </a>
+      </li>
+      <li class="likes">
+        <a href="#">
+          <ion-icon name="heart-outline"></ion-icon>
+          <p>Likes</p>
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <span>Custom</span>
+      <li class="switch-theme">
+        <a href="#">
+          <ion-icon name="moon-outline"></ion-icon>
+          <p>Dark Mode</p>
+        </a>
+      </li>
+      <li>
+        <a href="index.html">
+          <ion-icon name="log-out-outline"></ion-icon>
+          <p>Logout</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+  <button class="checkout-btn" onclick="window.location.href='checkout.html'">Checkout</button>
+
+
+
+<section class="product"> 
+  <h2 class="product-category">NEW RELEASE</h2>
+  <div class="product-container">
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/release1.jpg">
+              <img src="images/release1.jpg" class="product-thumb" alt="Funny Story"></a>
+              <button class="card-btn" onclick="addToCart('Identity Unknown (Kay Scarpetta Series #28)')">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Identity Unknown (Kay Scarpetta Series #28)</h2>
+              <p class="product-short-description"><a href="https://www.barnesandnoble.com/b/contributor/patricia-cornwell/_/N-2kir" target="_new">Patricia Cornwell</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/release2.jpg">
+              <img src="images/release2.jpg" class="product-thumb" alt="The Boyfriend (B&N Exclusive Edition)"></a>
+              <button class="card-btn" onclick="addToCart('The Boyfriend (B&N Exclusive Edition)')">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">The Boyfriend (B&N Exclusive Edition)</h2>
+              <p class="product-short-description"><a href="https://www.barnesandnoble.com/b/contributor/freida-mcfadden/_/N-2z23" target="_new">Freida McFadden</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/release3.jpg">
+              <img src="images/release3.jpg" class="product-thumb" alt="Murder Island: Patterson's Scariest Thriller Since The Summer House"></a>
+              <button class="card-btn" onclick="addToCart('Murder Island: Patterson\'s Scariest Thriller Since The Summer House')">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Murder Island: Patterson's Scariest Thriller Since The Summer House</h2>
+              <p class="product-short-description"><a href="https://www.barnesandnoble.com/b/james-patterson/_/N-1p3c" target="_new">James Patterson, Brian Sitts</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/release10.jpg">
+              <img src="images/release10.jpg" class="product-thumb" alt="Counting Miracles: A Novel"></a>
+              <button class="card-btn" onclick="addToCart('Counting Miracles: A Novel')">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Counting Miracles: A Novel</h2>
+              <p class="product-short-description"><a href="https://www.barnesandnoble.com/b/contributor/nicholas-sparks/_/N-2kq8" target="_new">Nicholas Sparks</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/release5.jpg">
+              <img src="images/release5.jpg" class="product-thumb" alt="The Book of Bill"></a>
+              <button class="card-btn" onclick="addToCart('The Book of Bill')">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">The Book of Bill</h2>
+              <p class="product-short-description"><a href="https://www.barnesandnoble.com/b/contributor/alex-hirsch/_/N-306g" target="_new">Alex Hirsch</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/release6.jpg">
+              <img src="images/release6.jpg" class="product-thumb" alt="Lies He Told Me: She's in love-with a liar."></a>
+              <button class="card-btn" onclick="addToCart('Lies He Told Me: She\'s in love-with a liar.')">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Lies He Told Me: She's in love-with a liar.</h2>
+              <p class="product-short-description"><a href="https://www.barnesandnoble.com/b/james-patterson/_/N-1p3c" target="_new">James Patterson</a>, <a href="https://davidellis.com/" target="_new">David Ellis</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/release7.jpg">
+              <img src="images/release7.jpg" class="product-thumb" alt="From Here to the Great Unknown (Oprah's Book Club)"></a>
+              <button class="card-btn" onclick="addToCart('From Here to the Great Unknown (Oprah\'s Book Club)')">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">From Here to the Great Unknown (Oprah's Book Club)</h2>
+              <p class="product-short-description"><a href="https://en.wikipedia.org/wiki/Lisa_Marie_Presley" target="_new">Lisa Marie Presley</a>, <a href="https://en.wikipedia.org/wiki/Riley_Keough" target="_new">Riley Keough</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/release8.jpg">
+              <img src="images/release8.jpg" class="product-thumb" alt="The Perfect Son"></a>
+              <button class="card-btn" onclick="addToCart('The Perfect Son')">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">The Perfect Son</h2>
+              <p class="product-short-description"><a href="https://www.goodreads.com/author/show/7244758.Freida_McFadden" target="_new">Freida McFadden</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/release9.jpg">
+              <img src="images/release9.jpg" class="product-thumb" alt="Onyx Storm"></a>
+              <button class="card-btn" onclick="addToCart('Onyx Storm')">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Onyx Storm</h2>
+              <p class="product-short-description"><a href="https://www.goodreads.com/author/show/7539785.Rebecca_Yarros" target="_new">Rebecca Yarros</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="button">
+          <a href="seemore.html">
+              <button class="see-more-btn">See More</button>
+          </a>
+      </div>
+  </div>
+</section>
+
+
+<section class="product"> 
+  <h2 class="product-category">MOST POPULAR</h2>
+  <div class="product-container">
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/popular1.jpg">
+              <img src="images/popular1.jpg" class="product-thumb" alt="Funny Story"></a>
+              <button class="card-btn" onclick="addToCart('Funny Story', 20)">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Funny Story</h2>
+              <p class="product-short-description"><a href="https://www.goodreads.com/author/show/13905555.Emily_Henry" target="_new">Emily Henry</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/popular2.jpg">
+              <img src="images/popular2.jpg" class="product-thumb" alt="The Wowen"></a>
+              <button class="card-btn" onclick="addToCart('The Wowen', 20)">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">The Wowen</h2>
+              <p class="product-short-description"><a href="https://www.goodreads.com/author/show/54493.Kristin_Hannah" target="_new">Kristin Hannah</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/popular3.jpg">
+              <img src="images/popular3.jpg" class="product-thumb" alt="Just For The Summer"></a>
+              <button class="card-btn" onclick="addToCart('Just For The Summer', 20)">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Just For The Summer</h2>
+              <p class="product-short-description"><a href="https://www.goodreads.com/author/show/18446724.Abby_Jimenez" target="_new">Abby Jimenez</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/popular4.jpg">
+              <img src="images/popular4.jpg" class="product-thumb" alt="First Lie Wins"></a>
+              <button class="card-btn" onclick="addToCart('First Lie Wins', 20)">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">First Lie Wins</h2>
+              <p class="product-short-description"><a href="https://www.goodreads.com/author/show/5317545.Ashley_Elston" target="_new">Ashley Elston</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/popular5.jpg">
+              <img src="images/popular5.jpg" class="product-thumb" alt="The Teacher"></a>
+              <button class="card-btn" onclick="addToCart('The Teacher', 20)">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">The Teacher</h2>
+              <p class="product-short-description"><a href="https://www.goodreads.com/author/show/7244758.Freida_McFadden" target="_new">Freida McFadden</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/popular6.jpg">
+              <img src="images/popular6.jpg" class="product-thumb" alt="House of Flame and Shadow"></a>
+              <button class="card-btn" onclick="addToCart('House of Flame and Shadow', 20)">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">House of Flame and Shadow</h2>
+              <p class="product-short-description"><a href="https://www.goodreads.com/author/show/3433047.Sarah_J_Maas" target="_new">Sarah J. Maas</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/popular7.jpg">
+              <img src="images/popular7.jpg" class="product-thumb" alt="Bride"></a>
+              <button class="card-btn" onclick="addToCart('Bride', 20)">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Bride</h2>
+              <p class="product-short-description"><a href="https://www.goodreads.com/author/show/21098177.Ali_Hazelwood" target="_new">  Ali Hazelwood</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/popular8.jpg">
+              <img src="images/popular8.jpg" class="product-thumb" alt="The Housemaid Is Watching"></a>
+              <button class="card-btn" onclick="addToCart('The Housemaid Is Watching', 20)">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">The Housemaid Is Watching</h2>
+              <p class="product-short-description"><a href="https://www.goodreads.com/author/show/7244758.Freida_McFadden" target="_new">Freida McFadden</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/popular9.jpg">
+              <img src="images/popular9.jpg" class="product-thumb" alt="The Paradise Problem"></a>
+              <button class="card-btn" onclick="addToCart('The Paradise Problem', 20)">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">The Paradise Problem</h2>
+              <p class="product-short-description"><a href="https://www.goodreads.com/author/show/6556689.Christina_Lauren" target="_new">Christina Lauren</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+              <div class="button">
+                  <a href="seemore.html">
+                  <button class="see-more-btn">See More</button>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+  <section class="product"> 
+    <h2 class="product-category"> BEST VALUE</h2>
+  <div class="product-container">
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/release1.jpg">
+              <img src="images/release1.jpg" class="product-thumb" alt="Funny Story"></a>
+              <button class="card-btn" onclick="addToCart('Harry Potter and the Sorcerer’s Stone (Harry Potter, #1)')">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Harry Potter and the Sorcerer’s Stone (Harry Potter, #1)</h2>
+              <p class="product-short-description"><a href="https://www.barnesandnoble.com/b/contributor/patricia-cornwell/_/N-2kir" target="_new">Patricia Cornwell</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/release2.jpg">
+              <img src="images/release2.jpg" class="product-thumb" alt="The Boyfriend (B&N Exclusive Edition)"></a>
+              <button class="card-btn" onclick="addToCart('The Boyfriend (B&N Exclusive Edition)')">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">The Boyfriend (B&N Exclusive Edition)</h2>
+              <p class="product-short-description"><a href="https://www.barnesandnoble.com/b/contributor/freida-mcfadden/_/N-2z23" target="_new">Freida McFadden</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/release3.jpg">
+              <img src="images/release3.jpg" class="product-thumb" alt="Murder Island: Patterson's Scariest Thriller Since The Summer House"></a>
+              <button class="card-btn" onclick="addToCart('Murder Island: Patterson\'s Scariest Thriller Since The Summer House')">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Murder Island: Patterson's Scariest Thriller Since The Summer House</h2>
+              <p class="product-short-description"><a href="https://www.barnesandnoble.com/b/james-patterson/_/N-1p3c" target="_new">James Patterson, Brian Sitts</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/release10.jpg">
+              <img src="images/release10.jpg" class="product-thumb" alt="Counting Miracles: A Novel"></a>
+              <button class="card-btn" onclick="addToCart('Counting Miracles: A Novel')">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Counting Miracles: A Novel</h2>
+              <p class="product-short-description"><a href="https://www.barnesandnoble.com/b/contributor/nicholas-sparks/_/N-2kq8" target="_new">Nicholas Sparks</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/release5.jpg">
+              <img src="images/release5.jpg" class="product-thumb" alt="The Book of Bill"></a>
+              <button class="card-btn" onclick="addToCart('The Book of Bill')">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">The Book of Bill</h2>
+              <p class="product-short-description"><a href="https://www.barnesandnoble.com/b/contributor/alex-hirsch/_/N-306g" target="_new">Alex Hirsch</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/release6.jpg">
+              <img src="images/release6.jpg" class="product-thumb" alt="Lies He Told Me: She's in love-with a liar."></a>
+              <button class="card-btn" onclick="addToCart('Lies He Told Me: She\'s in love-with a liar.')">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Lies He Told Me: She's in love-with a liar.</h2>
+              <p class="product-short-description"><a href="https://www.barnesandnoble.com/b/james-patterson/_/N-1p3c" target="_new">James Patterson</a>, <a href="https://davidellis.com/" target="_new">David Ellis</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/release7.jpg">
+              <img src="images/release7.jpg" class="product-thumb" alt="From Here to the Great Unknown (Oprah's Book Club)"></a>
+              <button class="card-btn" onclick="addToCart('From Here to the Great Unknown (Oprah\'s Book Club)')">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">From Here to the Great Unknown (Oprah's Book Club)</h2>
+              <p class="product-short-description"><a href="https://en.wikipedia.org/wiki/Lisa_Marie_Presley" target="_new">Lisa Marie Presley</a>, <a href="https://en.wikipedia.org/wiki/Riley_Keough" target="_new">Riley Keough</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/release8.jpg">
+              <img src="images/release8.jpg" class="product-thumb" alt="The Perfect Son"></a>
+              <button class="card-btn" onclick="addToCart('The Perfect Son')">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">The Perfect Son</h2>
+              <p class="product-short-description"><a href="https://www.goodreads.com/author/show/7244758.Freida_McFadden" target="_new">Freida McFadden</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <a href="images/release9.jpg">
+              <img src="images/release9.jpg" class="product-thumb" alt="Onyx Storm"></a>
+              <button class="card-btn" onclick="addToCart('Onyx Storm')">Add to Cart</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Onyx Storm</h2>
+              <p class="product-short-description"><a href="https://www.goodreads.com/author/show/7539785.Rebecca_Yarros" target="_new">Rebecca Yarros</a></p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+          <div class="button">
+            <button class="see-more-btn">
+              See More
+            </button>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <script src="darkmode.js"></script> <!-- Link to your dark mode JS -->
+  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+</body>
+</html>

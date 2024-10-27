@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet - Novelnest</title>
+    <link rel="stylesheet" href="wallet.css">
+    <link rel="stylesheet" href="darkmode.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="dots">
+          <img src="images/dots.png" alt="dots" />
+        </div>
+        <div class="profile">
+          <ion-icon name="person-outline"></ion-icon>
+        </div>
+        <ul>
+          <span>Home</span>
+          <li>
+            <a href="main.html">
+              <ion-icon name="home-outline"></ion-icon>
+              <p>Home</p>
+            </a>
+          </li>
+          <li>
+            <a href="book.html">
+              <ion-icon name="stats-chart-outline"></ion-icon>
+              <p>Prices</p>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <span>Content</span>
+          <li class="noti">
+            <a href="notification.html">
+              <ion-icon name="notifications-outline"></ion-icon>
+              <p>Notifications</p>
+            </a>
+          </li>
+          <li>
+            <a href="wallet.html">
+              <ion-icon name="wallet-outline"></ion-icon>
+              <p>Wallets</p>
+            </a>
+          </li>
+          <li class="likes">
+            <a href="#">
+              <ion-icon name="heart-outline"></ion-icon>
+              <p>Likes</p>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <span>Custom</span>
+          <li class="switch-theme">
+            <a href="#">
+              <ion-icon name="moon-outline"></ion-icon>
+              <p>Dark Mode</p>
+            </a>
+          </li>
+          <li>
+            <a href="index.html">
+              <ion-icon name="log-out-outline"></ion-icon>
+              <p>Logout</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    
+      <body class="light-mode">
+        <header class="wallet-header">
+            <h1>Novelnest Wallet</h1>
+            <p>Your balance and payment options</p>
+        </header>
+    
+        <section class="wallet-container">
+            <div class="wallet-balance">
+                <h2>Balance</h2>
+                <p>$<span id="walletBalance">100.00</span></p>
+            </div>
+    
+            <div class="wallet-actions">
+                <button id="cash-in-btn">Cash In</button>
+                <button id="send-money-btn">Send Money</button> <!-- Added Send Money Button -->
+                <button id="pay-btn">Pay</button>
+            </div>
+            
+            <div class="payment-options">
+                <h3>Payment Options</h3>
+                <ul>
+                    <li>
+                        <input type="radio" id="gcash" name="paymentMethod" value="gcash">
+                        <label for="gcash">GCash</label>
+                        <p>Instant cash-in and payment using your mobile wallet.</p>
+                    </li>
+                    <li>
+                        <input type="radio" id="paymaya" name="paymentMethod" value="paymaya">
+                        <label for="paymaya">PayMaya</label>
+                        <p>Securely pay for your purchases and transfer funds.</p>
+                    </li>
+                    <li>
+                        <input type="radio" id="credit-card" name="paymentMethod" value="credit-card">
+                        <label for="credit-card">Credit/Debit Card</label>
+                        <p>Use your card for seamless transactions.</p>
+                    </li>
+                    <li>
+                        <input type="radio" id="bank-transfer" name="paymentMethod" value="bank-transfer">
+                        <label for="bank-transfer">Bank Transfer</label>
+                        <p>Transfer funds directly from your bank account.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    
+
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+    <script src="wallet.js"></script> 
+    <script src="checkout.js"></script>
+</body>
+</html>
