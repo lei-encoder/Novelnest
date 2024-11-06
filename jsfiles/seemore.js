@@ -12,7 +12,7 @@ openCartButton.addEventListener('click', () => {
 // Add books to the cart
 document.querySelectorAll('.add-to-cart').forEach(button => {
     button.addEventListener('click', (event) => {
-        const bookTitle = event.target.parentElement.querySelector('h3').innerText;
+        const bookTitle = event.target.parentElement.querySelector('h2').innerText;
         cart.push(bookTitle);
         updateCart();
     });

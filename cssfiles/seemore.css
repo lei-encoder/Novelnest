@@ -12,8 +12,9 @@ header {
     text-align: center;
 }
 
-h1 {
+h2 {
     margin: 0;
+    text-transform: uppercase;
 }
 
 button {
@@ -45,9 +46,32 @@ button:hover {
     text-align: center;
 }
 
+
+
+.back-home {
+    background-color: #007BFF;
+    color: white;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-left: -250px;
+    z-index: -1;
+}
+
+.back-home:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
 .book img {
     max-width: 100%;
-    height: auto;
+    height: 500px;
     display: block;
     margin: 0 auto;
 }
@@ -76,7 +100,12 @@ button:hover {
     text-decoration: line-through;
   }
 
-  
+  .author {
+    font-size: 0.9em; /* Adjust font size to make it slightly smaller */
+    color: #555; /* Change the color to a subtle shade, if desired */
+    margin-top: 4px; /* Add a small space above the author name */
+}
+
 .sidebar.show {
     right: 0; /* Slide in */
 }
@@ -87,6 +116,8 @@ button:hover {
 
 #checkout {
     background-color: #28a745; /* Green */
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 #checkout:hover {
