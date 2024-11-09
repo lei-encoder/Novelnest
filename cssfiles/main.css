@@ -197,6 +197,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
+
 .gallery-container {
   display: flex;
   justify-content: flex-start; /* Aligns the gallery to the left */

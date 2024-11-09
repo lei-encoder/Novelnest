@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
@@ -36,37 +38,275 @@ body {
     margin: 0 auto;
 }
 
+
+/* Light mode (default) */
+.author {
+    color: black; /* Black text color for light mode */
+}
+
+.author a {
+    color: black;
+    text-decoration: none;
+}
+
+.author a:hover {
+    text-decoration: underline;
+}
+
+/* Dark mode */
+.dark-mode .author {
+    color: white; /* White text color for dark mode */
+}
+
+.dark-mode .author a {
+    color: white;
+}
+
+.dark-mode .author a:hover {
+    text-decoration: underline;
+}
+
+/* Style the iframe */
+#imageFrame {
+    display: none;  /* Initially hidden */
+    width: 100%;
+    height: 500px;
+    border: none;
+    margin-top: 20px;
+}
+
+/* Optional: You can style the image thumbnail */
+.book-image {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-color: #685cfe;
+  --main-transition: 0.5s all ease-in-out;
+}
+body {
+  background-color: #f0f0f0;
+}
+::selection {
+  color: white;
+  background: var(--main-color);
+}
+
 .sidebar {
+    width: 100px;
+    background-color: #fff;
+    padding: 20px;
+    position: fixed;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    transition: var(--main-transition);
+    text-align: center;
+  }
+  .sidebar:hover {
+    width: 300px;
+  }
+  .sidebar .dots {
+    width: 60px;
+  }
+  .sidebar .profile {
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: var(--main-color);
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    margin: 30px 0;
+  }
+  .sidebar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .sidebar ul {
+    padding-bottom: 30px;
+    list-style: none;
+  }
+  .sidebar ul span {
+    color: #8f99cc;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    display: block;
+    padding-bottom: 20px;
+  }
+  .sidebar ul li {
+    padding-left: 10px;
+    transition: var(--main-transition);
+  }
+  .sidebar:hover ul li {
+    padding-left: 0px;
+  }
+  .sidebar ul li a {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    transition: 0.3s all ease-in-out;
+    font-size: 16px;
+    width: 300px;
+    color: #555e8f;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .sidebar:hover a {
+    width: 100%;
+  }
+  .sidebar ul li a:hover {
+    background-color: #ebf0fe;
+    color: var(--main-color);
+  }
+  .sidebar ul li a ion-icon {
+    font-size: 22px;
+  }
+  .sidebar ul li.noti a ion-icon {
+    position: relative;
+  }
+  .sidebar ul li.noti a ion-icon::before {
+    content: " ";
+    position: absolute;
+    right: 0;
+    background-color: #3761ee;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  .sidebar ul li.likes a ion-icon {
+    position: relative;
+  }
+  .sidebar ul li.likes a ion-icon::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    background-color: #e45447;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  .sidebar ul li a p {
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--main-transition);
+  }
+  .sidebar:hover ul li a p {
+    visibility: visible;
+    opacity: 1;
+  }
+  .sidebar ul li.switch-theme {
+    position: relative;
+  }
+  .sidebar ul li.switch-theme button {
+    background-color: #ddd;
+    border: none;
+    border-radius: 50px;
+    height: 25px;
+    width: 50px;
+    padding: 5px;
+    position: absolute;
+    right: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--main-transition);
+  }
+  .sidebar:hover ul li.switch-theme button {
+    visibility: visible;
+    opacity: 1;
+  }
+  .sidebar ul li.switch-theme button .circle {
+    border-radius: 50%;
+    background-color: #fff;
+    height: 100%;
+    width: 15px;
+  }
+  
+  body.light-mode {
+    background-color: #ffffff; /* White background for the whole site */
+    color: #000000; /* Default text color for light mode */
+  }
+  
+  body.light-mode .sidebar {
+    background-color: #f0f0f0; /* Light background for sidebar */
+    color: #000000; /* Black text color in light mode */
+  }
+  body.dark-mode {
+    background-color: #121212; /* Dark background for the whole site */
+    color: #ffffff; /* White text color for the whole site */
+  }
+  
+  body.dark-mode .sidebar {
+    background-color: #333; /* Dark background for sidebar */
+    color: #ffffff; /* White text color in dark mode */
+  }
+
+  
+/* Light mode (default) */
+.sidebar2 {
     width: 250px;
     padding: 15px;
-    background-color: #f3f4f6;
+    background-color: #f3f4f6; /* Light background */
     border-right: 1px solid #ddd;
     font-size: 0.9em;
 }
 
-.sidebar h2 {
+.sidebar2 h2 {
     font-size: 1.2em;
     margin-bottom: 15px;
-    color: #8b4513;
+    color: #8b4513; /* SaddleBrown color for text */
 }
 
-.sidebar ul {
+.sidebar2 ul {
     list-style: none;
     padding-left: 0;
 }
 
-.sidebar ul li {
+.sidebar2 ul li {
     margin-bottom: 10px;
 }
 
-.sidebar ul li a {
+.sidebar2 ul li a {
     color: #8b4513;
     text-decoration: none;
 }
 
-.sidebar ul li a:hover {
+.sidebar2 ul li a:hover {
     text-decoration: underline;
 }
+
+/* Dark mode */
+.dark-mode .sidebar2 {
+    background-color: #2f2f2f; /* Dark background */
+    border-right: 1px solid #555;
+}
+
+.dark-mode .sidebar2 h2,
+.dark-mode .sidebar2 ul li a {
+    color: #d2b48c; /* Light tan color for text */
+}
+
 
 .content {
     flex: 1;

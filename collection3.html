@@ -12,31 +12,91 @@
         <p>Welcome to the Novelnest Book Library! Dive into a world of books, authors, and genres, and uncover your next favorite read.</p>
     </header>
 
+    <div class="sidebar">
+        <div class="dots">
+          <img src="images/dots.png" alt="dots" />
+        </div>
+        <div class="profile">
+          <ion-icon name="person-outline"></ion-icon>
+        </div>
+        <ul>
+          <span>Home</span>
+          <li>
+            <a href="main.html">
+              <ion-icon name="home-outline"></ion-icon>
+              <p>Home</p>
+            </a>
+          </li>
+          <li>
+            <a href="book.html">
+              <ion-icon name="stats-chart-outline"></ion-icon>
+              <p>Prices</p>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <span>Content</span>
+          <li class="noti">
+            <a href="notification.html">
+              <ion-icon name="notifications-outline"></ion-icon>
+              <p>Notifications</p>
+            </a>
+          </li>
+          <li>
+            <a href="wallet.html">
+              <ion-icon name="wallet-outline"></ion-icon>
+              <p>Wallets</p>
+            </a>
+          </li>
+          <li class="likes">
+            <a href="team.html">
+              <ion-icon name="heart-outline"></ion-icon>
+              <p>Team</p>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <span>Custom</span>
+          <li class="switch-theme">
+            <a href="#">
+              <ion-icon name="moon-outline"></ion-icon>
+              <p>Dark Mode</p>
+            </a>
+          </li>
+          <li>
+            <a href="index.html">
+              <ion-icon name="log-out-outline"></ion-icon>
+              <p>Logout</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
     <div class="container">
         <!-- Sidebar for Table of Contents -->
-        <aside class="sidebar">
+        <aside class="sidebar2">
             <h2>Contents</h2>
             <nav>
                 <ul>
-                    <li><a href="#book1">Funny Story</a></li>
-                    <li><a href="#book2">The Wowen</a></li>
-                    <li><a href="#book3">Just For The Summer</a></li>
-                    <li><a href="#book4">First Lie Wins</a></li>
-                    <li><a href="#book5">The Teacher</a></li>
-                    <li><a href="#book6">House of Flame and Shadow</a></li>
-                    <li><a href="#book7">Bride</a></li>
-                    <li><a href="#book8">The Housemaid Is Watching</a></li>
-                    <li><a href="#book9">The Paradise Problem</a></li>
-                    <li><a href="#book10">The Off-Limits Rule</a></li>
-                    <li><a href="#book11">Slap Shot Surprise</a></li>
-                    <li><a href="#book12">The Book of Witching</a></li>
-                    <li><a href="#book13">Holding the Reins</a></li>
-                    <li><a href="#book14">The Stone Witch of Florence</a></li>
-                    <li><a href="#book15">Blood Over Bright Haven</a></li>
-                    <li><a href="#book16">A Reign of Rose</a></li>
-                    <li><a href="#book17">Never Never</a></li>
-                    <li><a href="#book18">If I Stopped Haunting You</a></li>
-                    <li><a href="#book19">The Fury of the Gods</a></li>
+                    <li><a href="#book1">Jane Eyre</a></li>
+                    <li><a href="#book2">Harry Potter and the Sorcerer’s Stone</a></li>
+                    <li><a href="#book3">Pride and Prejudice</a></li>
+                    <li><a href="#book4">The Little Prince</a></li>
+                    <li><a href="#book5">The Diary of a Young Girl</a></li>
+                    <li><a href="#book6">The Lord of the Rings</a></li>
+                    <li><a href="#book7">The Book Thief</a></li>
+                    <li><a href="#book8">Romeo and Juliet</a></li>
+                    <li><a href="#book9">To Kill a Mockingbird</a></li>
+                    <li><a href="#book10">The Chronicles Of Narnia</a></li>
+                    <li><a href="#book11">The Kite Runner</a></li>
+                    <li><a href="#book12">The Giving Tree</a></li>
+                    <li><a href="#book13">Charlotte’s Web</a></li>
+                    <li><a href="#book14">Little Women</a></li>
+                    <li><a href="#book15">Alice’s Adventures in Wonderland & Through the Looking-Glass</a></li>
+                    <li><a href="#book16">Gone with the Wind</a></li>
+                    <li><a href="#book17">The Hitchhiker’s Guide to the Galaxy</a></li>
+                    <li><a href="#book18">Lord of the Flies</a></li>
+                    <li><a href="#book19">The Giver</a></li>
 
 
                 </ul>
@@ -54,14 +114,15 @@
             <section id="book1" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/bestvalue1.jpg">
-                        <img src="images/bestvalue1.jpg" alt="Book Title 1 Cover" class="book-image">
-                    </a>
+                        <iframe src="images/bestvalue1.jpg" frameborder="0"  class="book-image">
+
+                        <img src="images/bestvalue1.jpg" alt="Book Title 1 Cover" class="book-image"></iframe>
+                    
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Jane Eyre</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/1036615.Charlotte_Bront_" target="_new"> Charlotte Brontë</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/1036615.Charlotte_Bront_" target="_new"> Charlotte Brontë</a></p>
                         <p><strong>Summary:</strong> 
                             Jane Eyre is a novel about an orphan named Jane who faces a difficult childhood and grows up to become a governess. She is employed at Thornfield Hall, where she falls in love with her employer, Mr. Rochester. However, on their wedding day, she learns that Mr. Rochester is already married to a mentally ill woman, Bertha Mason, whom he keeps hidden. Heartbroken, Jane leaves Thornfield and survives on her own until she is taken in by the Rivers family. She later inherits a fortune, returns to Mr. Rochester, and they are reunited. The novel concludes with their marriage and a life together. The story explores themes of love, independence, and personal integrity.</p>
                         <p><strong>Genre:</strong> Classics,
@@ -82,13 +143,13 @@
             <section id="book2" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/bestvalue2.jpg">
-                        <img src="images/bestvalue2.jpg" alt="Book Title 2 Cover" class="book-image"></a>
+                        <iframe src="images/bestvalue2.jpg" frameborder="0"  class="book-image">
+                        <img src="images/bestvalue2.jpg" alt="Book Title 2 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Harry Potter and the Sorcerer’s Stone</h2>
-                        <p><strong>Author:</strong><a href="https://www.goodreads.com/author/show/1077326.J_K_Rowling" target="_new"> J.K. Rowling</a></p>
+                        <p class="author"><strong>Author:</strong><a href="https://www.goodreads.com/author/show/1077326.J_K_Rowling" target="_new"> J.K. Rowling</a></p>
                         <p><strong>Summary:</strong>  Harry Potter and the Sorcerer’s Stone follows 11-year-old Harry Potter, an orphan raised by his cruel aunt and uncle. On his birthday, he learns he is a wizard and is invited to attend Hogwarts School of Witchcraft and Wizardry. At Hogwarts, Harry makes friends, including Ron and Hermione, and discovers that a magical object called the Sorcerer's Stone is hidden in the school. The stone grants immortality and is being sought by the dark wizard Voldemort, who killed Harry’s parents. Harry, Ron, and Hermione protect the stone, and Harry faces Voldemort in the end, preventing him from regaining full power. The book ends with Harry returning to the Dursleys, now aware of his magical heritage.</p>
                         <p><strong>Genre:</strong>  Fantasy,
                             Fiction,
@@ -108,13 +169,13 @@
             <section id="book3" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/bestvalue3.jpg">
-                        <img src="images/bestvalue3.jpg" alt="Book Title 3 Cover" class="book-image"></a>
+                        <iframe src="images/bestvalue3.jpg" frameborder="0"  class="book-image">
+                        <img src="images/bestvalue3.jpg" alt="Book Title 3 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Pride and Prejudice</h2>
-                        <p><strong>Author:</strong><a href="https://www.goodreads.com/author/show/1265.Jane_Austen" target="_new"> Jane Austen</a></p>
+                        <p class="author"><strong>Author:</strong><a href="https://www.goodreads.com/author/show/1265.Jane_Austen" target="_new"> Jane Austen</a></p>
                         <p><strong>Summary:</strong> Pride and Prejudice by Jane Austen follows Elizabeth Bennet, a smart and independent young woman, and her evolving relationship with the wealthy and reserved Mr. Darcy. Initially, Elizabeth dislikes Darcy, thinking him arrogant and prideful, while Darcy feels that Elizabeth’s family is beneath him. As the story unfolds, both characters confront their own flaws and misconceptions. Elizabeth learns that Darcy is kind-hearted and generous, while Darcy realizes his prejudice against Elizabeth’s lower social standing. Despite initial misunderstandings, they eventually marry, and the novel emphasizes the importance of personal growth, overcoming pride, and the value of love and respect.                        
                            </p>
                         <p><strong>Genre:</strong> Fiction,
@@ -135,13 +196,13 @@
             <section id="book4" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/bestvalue4.jpg"> 
-                        <img src="images/bestvalue4.jpg" alt="Book Title 4 Cover" class="book-image"></a>
+                        <iframe src="images/bestvalue4.jpg" frameborder="0"  class="book-image">
+                        <img src="images/bestvalue4.jpg" alt="Book Title 4 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>The Little Prince</h2>
-                        <p><strong>Author:</strong><a href="https://www.goodreads.com/author/show/1020792.Antoine_de_Saint_Exup_ry" target="_new"> Antoine de Saint-Exupéry</a></p>
+                        <p class="author"><strong>Author:</strong><a href="https://www.goodreads.com/author/show/1020792.Antoine_de_Saint_Exup_ry" target="_new"> Antoine de Saint-Exupéry</a></p>
                         <p><strong>Summary:</strong> 
                             The Little Prince by Antoine de Saint-Exupéry tells the story of a young prince who travels from planet to planet, meeting strange adults who represent different aspects of society. The Prince learns life lessons from these encounters, including the importance of love and friendship. His most significant lesson comes from a fox, who teaches him that "what is essential is invisible to the eye." The story emphasizes seeing the world through the eyes of a child, focusing on relationships and deeper values over material concerns. In the end, the Little Prince returns to his home, leaving the narrator with valuable lessons about life and love.</p>
                         <p><strong>Genre:</strong> Classics,
@@ -162,13 +223,13 @@
             <section id="book5" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/bestvalue5.jpg">
-                        <img src="images/bestvalue5.jpg" alt="Book Title 5 Cover" class="book-image"></a>
+                        <iframe src="images/bestvalue5.jpg" frameborder="0"  class="book-image">
+                        <img src="images/bestvalue5.jpg" alt="Book Title 5 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>The Diary of a Young Girl</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/3720.Anne_Frank" target="_new">Anne frank</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/3720.Anne_Frank" target="_new">Anne frank</a></p>
                         <p><strong>Summary:</strong> 
                             The Diary of a Young Girl by Anne Frank is the personal account of a Jewish girl who went into hiding during World War II to escape Nazi persecution. Between 1942 and 1944, Anne wrote about her life in the secret annex in Amsterdam, where she lived with her family and others. Her diary reveals her thoughts, feelings, and experiences, including the struggles of living in hiding, the challenges of relationships, and her reflections on human nature and the horrors of war. Anne’s family was eventually arrested, and she died in a concentration camp in 1945. Her diary was later published and has become a powerful testimony of the Holocaust.
                             </p>
@@ -190,13 +251,13 @@
             <section id="book6" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/bestvalue6.jpg">
-                        <img src="images/bestvalue6.jpg" alt="Book Title 6 Cover" class="book-image"></a>
+                        <iframe src="images/bestvalue6.jpg" frameborder="0"  class="book-image">
+                        <img src="images/bestvalue6.jpg" alt="Book Title 6 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>The Lord of the Rings</h2>
-                        <p><strong>Author:</strong><a href="https://www.goodreads.com/author/show/656983.J_R_R_Tolkien" target="_new"> J.R.R. Tolkien</a></p>
+                        <p class="author"><strong>Author:</strong><a href="https://www.goodreads.com/author/show/656983.J_R_R_Tolkien" target="_new"> J.R.R. Tolkien</a></p>
                         <p><strong>Summary:</strong> The Lord of the Rings by J.R.R. Tolkien is an epic fantasy novel set in Middle-earth. The story follows Frodo Baggins, a hobbit who is tasked with destroying the One Ring, a powerful artifact created by the Dark Lord Sauron to rule the world. To help him, Frodo forms a group called the Fellowship of the Ring, consisting of his friend Sam, the ranger Aragorn, the elf Legolas, the dwarf Gimli, the wizard Gandalf, and others. As they face numerous dangers, the Fellowship is broken, and Frodo and Sam continue the journey alone. After many trials, Frodo succeeds in destroying the Ring in Mount Doom, defeating Sauron and bringing peace to Middle-earth. The novel explores themes of friendship, sacrifice, and the battle between good and evil.
                            </p>
                         <p><strong>Genre:</strong> Fantasy,
@@ -217,13 +278,13 @@
             <section id="book7" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/bestvalue7.jpg">
-                        <img src="images/bestvalue7.jpg" alt="Book Title 7 Cover" class="book-image"></a>
+                        <iframe src="images/bestvalue7.jpg" frameborder="0"  class="book-image">
+                        <img src="images/bestvalue7.jpg" alt="Book Title 7 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>The Book Thief</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/11466.Markus_Zusak" target="_new"> Markus Zusak</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/11466.Markus_Zusak" target="_new"> Markus Zusak</a></p>
                         <p><strong>Summary:</strong> The Book Thief by Markus Zusak is set in Nazi Germany during World War II and follows Liesel Meminger, a young girl sent to live with foster parents, Hans and Rosa Hubermann, after her biological parents are taken away by the Nazis. Liesel steals books and learns to read with Hans' help, finding solace in stories during the horrors of war. She befriends Rudy Steiner and secretly helps hide a Jewish man, Max, in her basement. As the war intensifies, Liesel faces loss, including the death of her loved ones in a bombing. The novel explores the power of words, the impact of war, and the strength of human resilience.</p>
                         <p><strong>Genre:</strong> Historical Fiction,
                             Fiction,
@@ -243,13 +304,13 @@
             <section id="book8" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/bestvalue8.jpg">
-                        <img src="images/bestvalue8.jpg" alt="Book Title 8 Cover" class="book-image"></a>
+                        <iframe src="images/bestvalue8.jpg" frameborder="0"  class="book-image">
+                        <img src="images/bestvalue8.jpg" alt="Book Title 8 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Romeo and Juliet</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/947.William_Shakespeare" target="_new">William Shakespeare</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/947.William_Shakespeare" target="_new"> William Shakespeare</a></p>
                         <p><strong>Summary:</strong> Romeo and Juliet by William Shakespeare is a tragic love story between two young lovers from feuding families, the Montagues and the Capulets. Romeo and Juliet meet at a party and fall in love, secretly marrying the next day. However, a series of misfortunes unfold when Romeo kills Tybalt, Juliet's cousin, in retaliation for the death of his friend Mercutio, leading to Romeo's banishment. Juliet, forced to marry Paris, takes a potion to appear dead, hoping to escape with Romeo. Miscommunication causes Romeo to believe she is truly dead, and he poisons himself. When Juliet awakens and finds him dead, she kills herself. Their deaths finally end the feud between their families, but it comes too late.</p>
                         <p><strong>Genre:</strong> Plays,
                             Fiction,
@@ -268,13 +329,13 @@
             <section id="book9" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/bestvalue9.webp">
-                        <img src="images/bestvalue9.webp" alt="Book Title 9 Cover" class="book-image"></a>
+                        <iframe src="images/bestvalue9.webp" frameborder="0"  class="book-image">
+                        <img src="images/bestvalue9.webp" alt="Book Title 9 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>To Kill a Mockingbird</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/1825.Harper_Lee" target="_new">Harper Lee</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/1825.Harper_Lee" target="_new"> Harper Lee</a></p>
                         <p><strong>Summary:</strong> To Kill a Mockingbird by Harper Lee is set in the 1930s in the racially divided town of Maycomb, Alabama. The story is narrated by Scout Finch, a young girl, who watches her father, Atticus Finch, a lawyer, defend Tom Robinson, a Black man falsely accused of raping a white woman. Despite clear evidence of Tom's innocence, he is convicted due to racial prejudice. Meanwhile, Scout and her brother, Jem, are fascinated by their reclusive neighbor, Boo Radley. In the end, Boo saves the children from an attack by Bob Ewell, Mayella’s father. The novel explores themes of racial injustice, empathy, and moral growth.</p>
                         <p><strong>Genre:</strong> Fiction,
                             Historical Fiction,
@@ -294,24 +355,16 @@
             <section id="book10" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/see1.jpg">
-                        <img src="images/see1.jpg" alt="Book Title 10 Cover" class="book-image"></a>
+                        <iframe src="images/value1.jpg" frameborder="0"  class="book-image">
+                        <img src="images/value1.jpg" alt="Book Title 10 Cover" class="book-image"></iframe>
                         <a href="seemore2.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
-                        <h2>The Off-Limits Rule</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/19682177.Sarah_Adams" target="_new">Sarah Adams</a></p>
-                        <p><strong>Summary:</strong> The Off-Limits Rule by Sarah Adams is a lighthearted romance featuring Lucy Marshall, a single mother returning to her hometown of Nashville with her young son after a failed stint in Atlanta. Staying with her brother Drew, Lucy tries to rebuild her life, but she finds herself increasingly attracted to Cooper, Drew’s best friend. Although Drew has declared Cooper off-limits, the chemistry between Lucy and Cooper is undeniable. The story follows their sweet yet forbidden relationship as Lucy grapples with her responsibilities as a mother and her desires for a new chance at love, while Cooper proves he’s more than just a charming flirt. The book blends humor and heartfelt moments, highlighting themes of self-discovery and the complexities of familial and romantic relationships.</p>
-                        <p><strong>Genre:</strong> Audiobook,
-                            Contemporary,
-                            Contemporary Romance,
-                            Fiction,
-                            Adult,
-                            Chick Lit,
-                            Clean Romance,
-                            New Adult,
-                            Humor,
-                            Adult Fiction
+                        <h2>The Chronicles of Narnia</h2>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/1069006.C_S_Lewis" target="_new"> C.S. Lewis</a></p>
+                        <p><strong>Summary:</strong>The Chronicles of Narnia is a series of seven fantasy novels that transport readers to the magical land of Narnia, a world where talking animals, mythical creatures, and ancient magic exist. The series follows a group of children who are drawn into Narnia through a wardrobe or other portals, each time finding themselves caught in a battle between good and evil. Central to the series is Aslan, a noble lion who represents good and leads the fight against the forces of evil. Throughout their adventures, the children grow in character, learn about courage, sacrifice, and friendship, and ultimately fulfill their destinies. The themes of faith, morality, and redemption are explored against the backdrop of an enchanting and perilous world.</p>
+                        <p><strong>Genre:</strong>
+                            Fantasy, Adventure
                             </p>
                     </div>
                 </div>
@@ -320,23 +373,15 @@
             <section id="book11" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/see2.jpg">
-                        <img src="images/see2.jpg" alt="Book Title 11 Cover" class="book-image"></a>
+                        <iframe src="images/value2.jpg" frameborder="0"  class="book-image">
+                        <img src="images/value2.jpg" alt="Book Title 11 Cover" class="book-image"></iframe>
                         <a href="seemore2.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
-                        <h2>Slap Shot Surprise</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/7095467.Melanie_Harlow" target="_new">Melanie Harlow</a></p>
-                        <p><strong>Summary:</strong> Slap Shot Surprise by Melanie Harlow tells the story of Mabel Buckley and Joe Lupo. Mabel, a small-town woman with a knack for getting nervous hiccups, and Joe, a dedicated and charming hockey player, meet on a flight where Mabel humorously lists all the things she hasn’t done, thinking they might crash. Their lives collide once more at a wedding, where undeniable sparks fly between them. What starts as a spontaneous connection quickly becomes serious when an unexpected surprise challenges them both to reconsider their life plans and feelings. The novel weaves humor, romance, and heartfelt moments, exploring themes of love and the power of taking chances.</p>
-                        <p><strong>Genre:</strong> Sports Romance, 
-                            Romance, 
-                            Hockey, 
-                            Sports, 
-                            Contemporary Romance, 
-                            Contemporary, 
-                            Adult, 
-                            Audiobook, 
-                            Family, 
+                        <h2>The Kite Runner</h2>
+                        <p class="author"><strong>Author:</strong><a href="https://www.goodreads.com/author/show/569.Khaled_Hosseini" target="_new"> Khaled Hosseini</a> </p>
+                        <p><strong>Summary:</strong> The Kite Runner is a deeply emotional and moving story set in Afghanistan, spanning several decades and following the life of Amir, a young boy from a privileged family. His closest companion is Hassan, the son of his father’s servant, and their friendship is filled with joy and moments of intense personal connection. However, a traumatic event involving betrayal deeply impacts their lives. As Amir grows older and the political climate of Afghanistan changes with the fall of the monarchy, he moves to America, but the memory of his past continues to haunt him. Years later, Amir returns to a war-torn Afghanistan to seek redemption and atone for the wrongs he committed. The novel explores themes of guilt, forgiveness, loyalty, and the complexity of father-son relationships. </p>
+                        <p><strong>Genre:</strong> Fiction, Drama, Historical Fiction
                             </p>
                     </div>
                 </div>
@@ -345,24 +390,15 @@
             <section id="book12" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/see3.jpg">
-                        <img src="images/see3.jpg" alt="Book Title 12 Cover" class="book-image"></a>
+                        <iframe src="images/value3.jpg" frameborder="0"  class="book-image">
+                        <img src="images/value3.jpg" alt="Book Title 12 Cover" class="book-image"></iframe>
                         <a href="seemore2.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
-                        <h2>The Book of Witching</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/16582738.C_J_Cooke" target="_new">C.J. Cooke</a></p>
-                        <p><strong>Summary:</strong> The Book of Witching by C.J. Cooke is a haunting story that intertwines elements of horror and historical fiction. The narrative follows Clem, a mother who receives devastating news that her daughter, Erin, is unconscious in the hospital after a hiking trip on the Orkney Islands. The incident leaves Erin's boyfriend dead, and her best friend missing. When Erin awakens, she no longer recognizes Clem and insists that her name is Nyx. Determined to uncover the truth, Clem travels to the site of the accident and discovers a chilling connection to an ancient tale of witchcraft and vengeance. As she delves deeper, she must confront whether Erin’s behavior is due to trauma or a supernatural curse linked to the Orkney Islands' dark past.</p>
-                        <p><strong>Genre:</strong> Horror,
-                            Fantasy,
-                            Historical Fiction,
-                            Witches,
-                            Fiction,
-                            Mystery,
-                            Gothic,
-                            Thriller,
-                            Mystery Thriller,
-                            Adult
+                        <h2>The Giving Tree</h2>
+                        <p class="author"><strong>Author:</strong><a href="https://www.goodreads.com/author/show/435477.Shel_Silverstein" target="_new"> Shel Silverstein</a></p>
+                        <p><strong>Summary:</strong> The Giving Tree is a simple yet profound story about a tree and its lifelong relationship with a young boy. From the time the boy is a child, the tree gives him everything it can: its apples to be sold, its branches for building, and its trunk for shelter. As the boy grows older, his needs increase, and the tree continues to give, even as it loses its own form. Eventually, the tree is reduced to a stump, and the boy, now an old man, returns to rest on it, finding contentment in the love that it has always offered. The book explores themes of unconditional love, sacrifice, and the complexities of giving. The relationship between the boy and the tree serves as a metaphor for selflessness and the emotional toll of giving without expecting anything in return. </p>
+                        <p><strong>Genre:</strong>  Children's Literature, Picture Book, Poetry
                             </p>
                     </div>
                 </div>
@@ -371,24 +407,16 @@
             <section id="book13" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/see4.jpg">
-                        <img src="images/see4.jpg" alt="Book Title 13 Cover" class="book-image"></a>
+                        <iframe src="images/value4.jpg" frameborder="0"  class="book-image">
+                        <img src="images/value4.jpg" alt="Book Title 13 Cover" class="book-image"></iframe>
                         <a href="seemore2.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
-                        <h2>Holding the Reins</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/47309944.Paisley_Hope" target="_new">Paisley Hope</a></p>
-                        <p><strong>Summary:</strong> Holding the Reins by Paisley Hope centers on Cecilia “CeCe” Ashby, who moves back to her family’s equestrian ranch in Laurel Creek, Kentucky, to heal from past hardships and rebuild her life. There, she reconnects with Nash Carter, a retired hockey star and charming businessman who was once her brothers' childhood friend. As old banter and sparks between CeCe and Nash ignite into something more, they must navigate new beginnings, healing, and the challenges of love in their close-knit small town. The story combines themes of resilience, romance, and the power of finding home again.</p>
-                        <p><strong>Genre:</strong> Romance,
-                            Westerns,
-                            Sports Romance,
-                            Hockey,
-                            Contemporary,
-                            Sports,
-                            Contemporary Romance,
-                            Adult,
-                            Western Romance,
-                            Fiction
+                        <h2>Charlotte’s Web</h2>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/988142.E_B_White" target="_new"> E.B. White</a> </p>
+                        <p><strong>Summary:</strong> Charlotte's Web is the heartwarming story of Wilbur, a young pig who is the runt of his litter, and his unlikely friendship with Charlotte, a wise and kind-hearted spider. After Wilbur is sold to a neighboring farm, he fears for his life, but Charlotte promises to save him. Using her web, Charlotte writes messages like "Some Pig" and "Terrific" that attract attention and convince the farmer and his family that Wilbur is special. Through Charlotte’s intelligence and selflessness, Wilbur learns about friendship, sacrifice, and the cycle of life. As Charlotte’s time comes to an end, Wilbur, now safe and loved, honors her memory by carrying on her legacy of kindness. The novel beautifully explores themes of loyalty, life, and death, making it a timeless read for both children and adults.
+                        </p>
+                        <p><strong>Genre:</strong> Children's Literature, Animal Fiction, Fantasy
                             </p>
                     </div>
                 </div>
@@ -397,24 +425,17 @@
             <section id="book14" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/see5.jpg">
-                        <img src="images/see5.jpg" alt="Book Title 14 Cover" class="book-image"></a>
+                        <iframe src="images/value5.jpg" frameborder="0"  class="book-image">
+                        <img src="images/value5.jpg" alt="Book Title 14 Cover" class="book-image"></iframe>
                         <a href="seemore2.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
-                        <h2>The Stone Witch of Florence</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/47365465.Anna_Rasche" target="_new">Anna Rasche</a></p>
-                        <p><strong>Summary:</strong> The Stone Witch of Florence unfolds a tale of ancient curses and secrets in the mystical heart of Florence. The story follows a young historian who stumbles upon a series of enigmatic relics linked to an old, infamous witch. As she digs deeper, she discovers a haunting connection between the past and present, unleashing dark forces she must race against time to understand and confront. With the city’s rich history and folklore entwined, this captivating narrative blends suspense, magic, and the power of unraveling long-buried truths.</p>
-                        <p><strong>Genre:</strong> Historical Fiction,
-                            Fantasy,
-                            Fiction,
-                            Witches,
-                            Historical,
-                            Italy,
-                            Adult,
-                            Mystery,
-                            Historical Fantasy,
-                            Audiobook
+                        <h2>Little Women</h2>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/1315.Louisa_May_Alcott" target="_new"> Louisa May Alcott
+                        </a> </p>
+                        <p><strong>Summary:</strong> Little Women follows the lives of the four March sisters—Jo, Meg, Beth, and Amy—living in Massachusetts during the American Civil War. The novel begins with the girls struggling with their financial hardships while their father is away serving as a chaplain in the war. Each sister has her own dreams and struggles, and through their journeys, they grow into strong, independent women. Jo, the spirited and creative sister, dreams of becoming a writer; Meg seeks a loving marriage; Beth, the gentle one, faces a devastating illness; and Amy, the youngest, aspires to greatness in art. The novel emphasizes the importance of family bonds, sacrifice, and personal growth, while also providing a nuanced portrayal of gender expectations and the complexities of womanhood in 19th-century America.
+                        </p>
+                        <p><strong>Genre:</strong>  Fiction, Coming-of-Age, Historical Fiction
                             </p>
                     </div>
                 </div>
@@ -423,24 +444,16 @@
             <section id="book15" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/see6.jpg">
-                        <img src="images/see6.jpg" alt="Book Title 15 Cover" class="book-image"></a>
+                        <iframe src="images/value6.jpg" frameborder="0"  class="book-image">
+                        <img src="images/value6.jpg" alt="Book Title 15 Cover" class="book-image"></iframe>
                         <a href="seemore2.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
-                        <h2>Blood Over Bright Haven</h2>
-                        <p><strong>Author:</strong><a href="https://www.goodreads.com/author/show/15735471.M_L_Wang" target="_new"> M.L. Wang</a></p>
-                        <p><strong>Summary:</strong> Blood Over Bright Haven by M.L. Wang is a fantasy novel set in a world where two main characters, Sciona and Thomil, navigate personal and societal challenges. Sciona is an ambitious mage determined to be the first woman in the Tiranian High Magistry, while Thomil, a member of the nomadic Caldonnae tribe, is forced to work as a janitor due to his tribe's displacement by a deadly disease known as the Blight. The story explores themes of magic, societal inequality, and personal identity, with the characters' lives intertwining as they confront the harsh realities of their society​</p>
-                        <p><strong>Genre:</strong> Fantasy,
-                            Adult,
-                            Fiction,
-                            High Fantasy,
-                            Magic,
-                            Science Fiction,
-                            Dark,
-                            Dark Fantasy,
-                            Science Fiction Fantasy,
-                            Academia 
+                        <h2>Alice’s Adventures in Wonderland & Through the Looking-Glass</h2>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/8164.Lewis_Carroll" target="_new"> Lewis Carroll</a></p>
+                        <p><strong>Summary:</strong> Alice's Adventures in Wonderland and Through the Looking-Glass are two of the most beloved fantasy novels of all time. The first book follows Alice, a curious and adventurous young girl, as she falls down a rabbit hole and finds herself in a strange, chaotic world where logic is turned on its head. She encounters eccentric characters like the Cheshire Cat, the White Rabbit, and the Queen of Hearts, who challenge her understanding of reality. In the second book, Alice steps through a mirror into an even stranger world, where she navigates bizarre landscapes and encounters new characters, including Tweedledum and Tweedledee. The stories explore the power of imagination, the absurdity of life, and the questioning of authority, offering readers a playful, surreal exploration of logic and language.
+                            ​</p>
+                        <p><strong>Genre:</strong> Fantasy, Adventure, Children's Literature
                         </p>
                     </div>
                 </div>
@@ -449,24 +462,15 @@
             <section id="book16" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/see7.jpg">
-                        <img src="images/see7.jpg" alt="Book Title 16 Cover" class="book-image"></a>
+                        <iframe src="images/value7.jpg" frameborder="0"  class="book-image">
+                        <img src="images/value7.jpg" alt="Book Title 16 Cover" class="book-image"></iframe>
                         <a href="seemore2.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
-                        <h2>A Reign of Rose</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/22947235.Kate_Golden" target="_new">Kate Golden</a></p>
-                        <p><strong>Summary:</strong> A Reign of Rose by Kate Golden is the conclusion to the Sacred Stones trilogy, following the struggles of Kane Ravenwood, King of Onyx Kingdom, and Arwen Valondale as they fight to defeat the powerful Fae King, Lazarus. Kane is willing to sacrifice himself to fulfill the prophecy and kill his father, while Arwen is determined to destroy Lazarus and save both realms from doom. As their paths intertwine, both characters must face immense personal challenges and make sacrifices to save the world, even if it costs them everything.</p>
-                        <p><strong>Genre:</strong> Fantasy,
-                            Romantasy,
-                            Fantasy Romance,
-                            Romance,
-                            Fae,
-                            Dragons,
-                            Magic,
-                            Fiction,
-                            Adult,
-                            Audiobook
+                        <h2>Gone with the Wind</h2>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/11081.Margaret_Mitchelln" target="_new"> Margaret Mitchell</a></p>
+                        <p><strong>Summary:</strong> Gone with the Wind is an epic historical novel set against the backdrop of the American Civil War and the Reconstruction era. It centers on Scarlett O'Hara, a headstrong and determined Southern woman who is accustomed to privilege and comfort. As war devastates the South, Scarlett must navigate the harsh realities of life, love, and survival. Her relationships with several men, including the dashing Rhett Butler, are marked by passion, conflict, and emotional turmoil. The novel explores themes of survival, personal strength, and the changing roles of women in times of crisis. With its vivid portrayal of the Old South, the devastation of war, and the complexities of love and loss, the novel remains a powerful exploration of human resilience and the cost of ambition.</p>
+                        <p><strong>Genre:</strong> Historical Fiction, Romance, Drama
                             </p>
                     </div>
                 </div>
@@ -475,24 +479,16 @@
             <section id="book17" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/see8.jpg">
-                        <img src="images/see8.jpg" alt="Book Title 17 Cover" class="book-image"></a>
+                        <iframe src="images/value8.jpg" frameborder="0"  class="book-image">
+                        <img src="images/value8.jpg" alt="Book Title 17 Cover" class="book-image"></iframe>
                         <a href="seemore2.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
-                        <h2>Never Never</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/5430144.Colleen_Hoover" target="_new">Colleen Hoover</a>, <a href="https://www.goodreads.com/author/show/5410816.Tarryn_Fisher" target="_new"> Tarryn Fisher</a></p>
-                        <p><strong>Summary:</strong> Never Never by Colleen Hoover and Tarryn Fisher follows the intense journey of two high school students, Charlie and Silas, who wake up one day with no memory of who they are or how they got there. With their memories wiped every 48 hours, they must rely on each other to uncover the truth about their pasts and their mysterious condition. As they investigate, they unravel deep secrets about their lives, and the story delves into themes like love, identity, and the impact of betrayal. The book explores how memory loss affects self-discovery and the resilience of the human spirit as they try to rebuild their connection.</p>
-                        <p><strong>Genre:</strong> Romance,
-                            Young Adult,
-                            Contemporary,
-                            Mystery,
-                            New Adult,
-                            Fiction,
-                            Paranormal,
-                            Fantasy,
-                            Suspense,
-                            Contemporary Romance
+                        <h2>The Hitchhiker’s Guide to the Galaxy</h2>
+                        <p class="author"><strong>Author:</strong><a href="https://www.goodreads.com/author/show/4.Douglas_Adams" target="_new"> Douglas Adams</a></p>
+                        <p><strong>Summary:</strong> The Hitchhiker’s Guide to the Galaxy begins with Arthur Dent, an ordinary man who is suddenly swept into an intergalactic adventure when Earth is destroyed to make way for a hyperspace bypass. Arthur teams up with Ford Prefect, an alien writer for the titular guidebook, as they journey across space. Along the way, they encounter eccentric characters such as the two-headed, three-armed Zaphod Beeblebrox, and Marvin, the depressed robot. Packed with satirical humor and philosophical insights, the novel questions the meaning of life, the absurdity of existence, and the unpredictability of the universe. Its witty dialogue and outlandish scenarios make it an unforgettable read that has inspired generations of fans.
+                        </p>
+                        <p><strong>Genre:</strong> Science Fiction, Comedy, Adventure
                             </p>
                     </div>
                 </div>
@@ -501,24 +497,16 @@
             <section id="book18" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/see9.jpg">
-                        <img src="images/see9.jpg" alt="Book Title 18 Cover" class="book-image"></a>
+                        <iframe src="images/value9.jpg" frameborder="0"  class="book-image">
+                        <img src="images/value9.jpg" alt="Book Title 18 Cover" class="book-image"></iframe>
                         <a href="seemore2.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
-                        <h2>If I Stopped Haunting You</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/23432845.Colby_Wilkens" target="_new">Colby Wilkens</a></p>
-                        <p><strong>Summary:</strong> If I Stopped Haunting You by Colby Wilkens is a fun, fast-paced enemies-to-lovers romance with a paranormal twist. Penelope Skinner, a horror author, is invited to a writers' retreat at a haunted Scottish castle after a public feud with fellow author Neil Storm. They have unresolved tension, as Pen threw a book at Neil, and their past rivalry is full of animosity. However, as they try to avoid each other, they find themselves trapped in a real ghost story, forcing them to confront their feelings while dealing with supernatural events.</p>
-                        <p><strong>Genre:</strong> Romance,
-                            Paranormal,
-                            Horror,
-                            Fiction,
-                            Contemporary,
-                            Paranormal Romance,
-                            Adult,
-                            Contemporary Romance,
-                            Audiobook,
-                            Halloween
+                        <h2>Lord of the Flies</h2>
+                        <p class="author"><strong>Author:</strong><a href="https://www.goodreads.com/author/show/306.William_Golding" target="_new"> William Golding</a> </p>
+                        <p><strong>Summary:</strong> Lord of the Flies is a dark allegorical novel about a group of boys stranded on a deserted island after a plane crash. With no adults around, the boys attempt to form a society, but their efforts quickly devolve into chaos. As they struggle for power and survival, they confront their primal instincts and the loss of civility. The novel explores the inherent violence and savagery in human nature, as well as the breakdown of order in the absence of societal structures. Through its powerful symbolism, Lord of the Flies examines the dangers of groupthink, the corrupting influence of power, and the fragility of civilization itself.
+                        </p>
+                        <p><strong>Genre:</strong> Fiction, Allegory, Psychological Fiction
                         </p>
                     </div>
                 </div>
@@ -527,29 +515,23 @@
             <section id="book19" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/see10.jpg">
-                        <img src="images/see10.jpg" alt="Book Title 19 Cover" class="book-image"></a>
+                        <iframe src="images/value10.jpg" frameborder="0"  class="book-image">
+                        <img src="images/value10.jpg" alt="Book Title 19 Cover" class="book-image"></iframe>
                         <a href="seemore2.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
-                        <h2>The Fury of the Gods</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/5898355.John_Gwynne" target="_new">John Gwynne</a></p>
-                        <p><strong>Summary:</strong> The Fury of the Gods by John Gwynne is the final book in The Bloodsworn Saga, where the epic battle between gods and mortals reaches its peak. Lik-Rifa, the dragon god, has nearly conquered the world, while Varg and his allies prepare for a final stand at Snakavik. The book blends intense action and personal character arcs, especially Varg's emotional journey as he seeks revenge for his sister's death. Alongside the bloody battles, moments of deep emotional connection provide a poignant contrast to the brutal world.</p>
-                        <p><strong>Genre:</strong> Fantasy,
-                            Fiction,
-                            Dragons,
-                            Mythology,
-                            High Fantasy,
-                            Epic Fantasy,
-                            Adult,
-                            Audiobook,
-                            Science Fiction Fantasy,
-                            Magic
+                        <h2>The Giver</h2>
+                        <p class="author"><strong>Author:</strong><a href="https://www.goodreads.com/author/show/2493.Lois_Lowry" target="_new"> Lois Lowry</a> </p>
+                        <p><strong>Summary:</strong> The Giver is set in a dystopian society where emotions are suppressed, and memories of the past are controlled by a group of leaders known as the Elders. Jonas, a young boy, is chosen to be the next Receiver of Memories, a position that involves learning about the world’s history and experiencing emotions that have been erased from society. Under the guidance of the current Receiver, a man known as The Giver, Jonas begins to uncover the truth about his community’s dark past. As he gains knowledge, he starts to question the nature of freedom, individuality, and the true cost of living in a “perfect” society. The novel explores the importance of choice, memory, and the human desire for connection.</p>
+                        <p><strong>Genre:</strong> Science Fiction, Dystopian, Young Adult Fiction
                             </p>
                     </div>
                 </div>
             </section>
         </main>
     </div>
+    <script src="jsfiles/darkmode.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+    <script src="jsfiles/collection.js"></script>
 </body>
 </html>

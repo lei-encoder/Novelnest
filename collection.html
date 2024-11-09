@@ -6,6 +6,7 @@
     <title>Novelnest Book Library</title>
     <link rel="stylesheet" href="cssfiles/collection.css">
     
+    
 </head>
 <body>
     <header class="header">
@@ -13,9 +14,68 @@
         <p>Welcome to the Novelnest Book Library! Dive into a world of books, authors, and genres, and uncover your next favorite read.</p>
     </header>
 
+
+    <div class="sidebar">
+        <div class="dots">
+          <img src="images/dots.png" alt="dots" />
+        </div>
+        <div class="profile">
+          <ion-icon name="person-outline"></ion-icon>
+        </div>
+        <ul>
+          <span>Home</span>
+          <li>
+            <a href="main.html">
+              <ion-icon name="home-outline"></ion-icon>
+              <p>Home</p>
+            </a>
+          </li>
+          <li>
+            <a href="book.html">
+              <ion-icon name="stats-chart-outline"></ion-icon>
+              <p>Prices</p>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <span>Content</span>
+          <li class="noti">
+            <a href="notification.html">
+              <ion-icon name="notifications-outline"></ion-icon>
+              <p>Notifications</p>
+            </a>
+          </li>
+          <li>
+            <a href="wallet.html">
+              <ion-icon name="wallet-outline"></ion-icon>
+              <p>Wallets</p>
+            </a>
+          </li>
+          <li class="likes">
+            <a href="team.html">
+              <ion-icon name="heart-outline"></ion-icon>
+              <p>Team</p>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <span>Custom</span>
+          <li class="switch-theme">
+            <a href="#">
+              <ion-icon name="moon-outline"></ion-icon>
+              <p>Dark Mode</p>
+            </a>
+          </li>
+          <li>
+            <a href="index.html">
+              <ion-icon name="log-out-outline"></ion-icon>
+              <p>Logout</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     <div class="container">
-        <!-- Sidebar for Table of Contents -->
-        <aside class="sidebar">
+        <aside class="sidebar2">
             <h2>Contents</h2>
             <nav>
                 <ul>
@@ -54,14 +114,14 @@
             <section id="book1" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/release1.jpg">
+                        <iframe src="images/release1.jpg" frameborder="0"  class="book-image">
                         <img src="images/release1.jpg" alt="Book Title 1 Cover" class="book-image">
-                    </a>
+                        </iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Identity Unknown (Kay Scarpetta Series #28)</h2>
-                        <p><strong>Author:</strong> <a href="https://www.barnesandnoble.com/b/contributor/patricia-cornwell/_/N-2kir" target="_new">Patricia Cornwell</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.barnesandnoble.com/b/contributor/patricia-cornwell/_/N-2kir" target="_new">Patricia Cornwell</a></p>
                         <p><strong>Summary:</strong> 
                             Identity Unknown (Kay Scarpetta Series #28) by Patricia Cornwell follows the renowned forensic pathologist Kay Scarpetta as she 
                             navigates a complex case involving a series of mysterious deaths and a chilling threat. When a young woman's body is discovered,
@@ -77,13 +137,13 @@
             <section id="book2" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/release2.jpg">
-                        <img src="images/release2.jpg" alt="Book Title 2 Cover" class="book-image"></a>
+                        <iframe src="images/release2.jpg" frameborder="0"  class="book-image">
+                        <img src="images/release2.jpg" alt="Book Title 2 Cover" class="book-image"> </iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>The Boyfriend (B&N Exclusive Edition)</h2>
-                        <p><strong>Author:</strong> <a href="https://www.barnesandnoble.com/b/contributor/freida-mcfadden/_/N-2z23" target="_new">Freida McFadden</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.barnesandnoble.com/b/contributor/freida-mcfadden/_/N-2z23" target="_new">Freida McFadden</a></p>
                         <p><strong>Summary:</strong> She's looking for the perfect man. He's looking for the perfect victim.
 
                             Sydney Shaw, like every single woman in New York, has terrible luck with dating. She’s seen it men who lie in their dating profile, men who stick her with the dinner bill, and worst of all, men who can't shut up about their mothers. But finally, she hits the jackpot.
@@ -103,13 +163,13 @@
             <section id="book3" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/release3.jpg">
-                        <img src="images/release3.jpg" alt="Book Title 3 Cover" class="book-image"></a>
+                        <iframe src="images/release3.jpg" frameborder="0"  class="book-image">
+                        <img src="images/release3.jpg" alt="Book Title 3 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Murder Island: Patterson's Scariest Thriller Since The Summer House</h2>
-                        <p><strong>Author:</strong><a href="https://www.barnesandnoble.com/b/james-patterson/_/N-1p3c" target="_new">James Patterson, Brian Sitts</a></p>
+                        <p class="author"><strong>Author:</strong><a href="https://www.barnesandnoble.com/b/james-patterson/_/N-1p3c" target="_new">James Patterson, Brian Sitts</a></p>
                         <p><strong>Summary:</strong> They thought they found heaven on earth. But their paradise becomes a nightmare when Professor Brandt Savage and his girlfriend Kira Sunlight stumble on a terrifying conspiracy.
 
                             When professor turned crime-fighter Brandt "Doc" Savage and his girlfriend Kira land on a desert island in the Atlantic, they believe they've discovered a perfect utopia, a refuge from their troubled pasts.
@@ -125,13 +185,13 @@
             <section id="book4" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/release10.jpg">
-                        <img src="images/release10.jpg" alt="Book Title 4 Cover" class="book-image"></a>
+                        <iframe src="images/release4.jpg" frameborder="0"  class="book-image">
+                        <img src="images/release4.jpg" alt="Book Title 4 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Counting Miracles: A Novel</h2>
-                        <p><strong>Author:</strong> <a href="https://www.barnesandnoble.com/b/contributor/nicholas-sparks/_/N-2kq8" target="_new">Nicholas Sparks</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.barnesandnoble.com/b/contributor/nicholas-sparks/_/N-2kq8" target="_new">Nicholas Sparks</a></p>
                         <p><strong>Summary:</strong> Counting Miracles: A Novel follows the heartfelt journey of a young woman named Etta, who grapples with the aftermath of her mother's tragic death. In her quest for healing, she embarks on a journey to reconnect with her estranged father, who is battling his own demons. As Etta navigates the complexities of love, loss, and forgiveness, she discovers the power of resilience and the importance of family bonds. Through poignant moments and unexpected revelations, the novel explores themes of grief, hope, and the miracles that can emerge from life's challenges.</p>
                         <p><strong>Genre:</strong> Romance
                             Fiction, 
@@ -150,13 +210,13 @@
             <section id="book5" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/release5.jpg">
-                        <img src="images/release5.jpg" alt="Book Title 5 Cover" class="book-image"></a>
+                        <iframe src="images/release5.jpg" frameborder="0"  class="book-image">
+                        <img src="images/release5.jpg" alt="Book Title 5 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>The Book of Bill</h2>
-                        <p><strong>Author:</strong> <a href="https://www.barnesandnoble.com/b/contributor/alex-hirsch/_/N-306g" target="_new">Alex Hirsch</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.barnesandnoble.com/b/contributor/alex-hirsch/_/N-306g" target="_new">Alex Hirsch</a></p>
                         <p><strong>Summary:</strong> 
                             The Book of Bill is a humorous graphic novel by Alex Hirsch that follows the life of Bill, an everyday office worker who finds himself caught in a series of absurd and comical situations. The story showcases Bill's attempts to navigate the mundane challenges of his job while dealing with eccentric coworkers and unexpected events.
 
@@ -184,13 +244,13 @@
             <section id="book6" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/release6.jpg">
-                        <img src="images/release6.jpg" alt="Book Title 6 Cover" class="book-image"></a>
+                        <iframe src="images/release6.jpg" frameborder="0"  class="book-image">
+                        <img src="images/release6.jpg" alt="Book Title 6 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Lies He Told Me: She's in Love-with a Liar.</h2>
-                        <p><strong>Author:</strong> <a href="https://www.barnesandnoble.com/b/james-patterson/_/N-1p3c" target="_new">James Patterson</a>, <a href="https://davidellis.com/" target="_new">David Ellis</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.barnesandnoble.com/b/james-patterson/_/N-1p3c" target="_new">James Patterson</a>, <a href="https://davidellis.com/" target="_new">David Ellis</a></p>
                         <p><strong>Summary:</strong> Lies He Told Me: She’s in Love—with a Liar is a thrilling novel centered around Marcie Bowers, a former big-city lawyer and mother of two, who discovers that her husband, David, is leading a double life. The story unfolds in Hemingway Grove, Illinois, where David, who owns a local pub, becomes a local hero after a dramatic rescue. However, this newfound fame unravels dark secrets that could endanger their lives.
 
                             As Marcie grapples with the truth about her husband, she must differentiate between the loving family man she thought she knew and the cold-blooded persona hiding beneath the surface. The book is filled with unexpected twists, keeping readers on the edge of their seats as Marcie confronts the reality of her husband's actions and their implications</p>
@@ -202,13 +262,13 @@
             <section id="book7" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/release7.jpg">
-                        <img src="images/release7.jpg" alt="Book Title 7 Cover" class="book-image"></a>
+                        <iframe src="images/release7.jpg" frameborder="0"  class="book-image">
+                        <img src="images/release7.jpg" alt="Book Title 7 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>From Here to the Great Unknown (Oprah's Book Club)</h2>
-                        <p><strong>Author:</strong> <a href="https://en.wikipedia.org/wiki/Lisa_Marie_Presley" target="_new">Lisa Marie Presley</a>, <a href="https://en.wikipedia.org/wiki/Riley_Keough" target="_new">Riley Keough</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://en.wikipedia.org/wiki/Lisa_Marie_Presley" target="_new">Lisa Marie Presley</a>, <a href="https://en.wikipedia.org/wiki/Riley_Keough" target="_new">Riley Keough</a></p>
                         <p><strong>Summary:</strong>From Here to the Great Unknown is a novel that explores themes of self-discovery, resilience, and the quest for purpose. The story follows the journey of a protagonist who grapples with personal loss and societal expectations while seeking to understand their place in the world. As they encounter various characters who challenge their perspectives, the narrative delves into the complexities of human relationships and the transformative power of adventure. The novel ultimately emphasizes the importance of embracing uncertainty and finding hope in the unknown.</p>
                         <p><strong>Genre:</strong> Memoir, Nonfiction, Audiobook, Biography, Music, Biography Memoir, Autobiography, Adult, True Story, Family</p>
                     </div>
@@ -218,13 +278,13 @@
             <section id="book8" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/release8.jpg">
-                        <img src="images/release8.jpg" alt="Book Title 8 Cover" class="book-image"></a>
+                        <iframe src="images/release8.jpg" frameborder="0"  class="book-image">
+                        <img src="images/release8.jpg" alt="Book Title 8 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>The Perfect Son</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/7244758.Freida_McFadden" target="_new">Freida McFadden</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/7244758.Freida_McFadden" target="_new">Freida McFadden</a></p>
                         <p><strong>Summary:</strong> This poignant novel follows a mother who has invested her hopes and dreams into her son, envisioning a perfect future for him. As he struggles to find his own identity and purpose, the story explores themes of familial expectations, love, and the quest for individuality. Through their emotional journey, both mother and son learn that perfection is not a destination but a complex, often messy experience. A heartfelt exploration of the bonds that shape us and the courage it takes to embrace our true selves.</p>
                         <p><strong>Genre:</strong> Thriller, Audiobook, Mystery, Fiction, Mystery Thriller, Suspense, Psychological Thriller, Crime, Adult, Dark</p>
                     </div>
@@ -234,13 +294,13 @@
             <section id="book9" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/release9.jpg">
-                        <img src="images/release9.jpg" alt="Book Title 9 Cover" class="book-image"></a>
+                        <iframe src="images/release9.jpg" frameborder="0"  class="book-image">
+                        <img src="images/release9.jpg" alt="Book Title 9 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Onyx Storm</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/7539785.Rebecca_Yarros" target="_new">Rebecca Yarros</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/7539785.Rebecca_Yarros" target="_new">Rebecca Yarros</a></p>
                         <p><strong>Summary:</strong> In this gripping tale of adventure and self-discovery, Onyx Storm follows a fierce protagonist navigating a world fraught with danger and uncertainty. As she uncovers hidden truths and faces formidable adversaries, she must confront her own inner demons and the weight of her choices. Blending elements of fantasy and suspense, this novel explores themes of resilience, loyalty, and the power of friendship. With rich world-building and compelling characters, Onyx Storm takes readers on an unforgettable journey where courage is tested and destinies are forged.</p>
                         <p><strong>Genre:</strong> Fantasy, Romantasy, Romance, Dragons, Fantasy Romance, Fiction, Adult, New Adult, Magic, Science Fiction Fantasy</p>
                     </div>
@@ -250,13 +310,13 @@
             <section id="book10" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/seemore1.jpg">
-                        <img src="images/seemore1.jpg" alt="Book Title 10 Cover" class="book-image"></a>
+                        <iframe src="images/seemore1.jpg" frameborder="0"  class="book-image">
+                        <img src="images/seemore1.jpg" alt="Book Title 10 Cover" class="book-image"></iframe>
                         <a href="seemore.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Sunrise on the Reaping</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/153394.Suzanne_Collins" target="_new">Suzanne Collins</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/153394.Suzanne_Collins" target="_new">Suzanne Collins</a></p>
                         <p><strong>Summary:</strong> Sunrise on the Reaping is a gripping prequel set in The Hunger Games universe. It centers on Haymitch Abernathy during the Second Quarter Quell, where twice the usual number of tributes are chosen for a perilous and manipulated arena. Haymitch’s struggle to survive, form alliances, and fight against the Capitol’s cruelty lays the groundwork for his future rebellious spirit, ultimately shaping his fate and relationships in Panem.</p>
                         <p><strong>Genre:</strong> Dystopia, Young Adult, Fantasy, Fiction, Science Fiction, Young Adult Fantasy</p>
                     </div>
@@ -266,13 +326,13 @@
             <section id="book11" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/seemore2.jpg">
-                        <img src="images/seemore2.jpg" alt="Book Title 11 Cover" class="book-image"></a>
+                        <iframe src="images/seemore2.jpg" frameborder="0"  class="book-image">
+                        <img src="images/seemore2.jpg" alt="Book Title 11 Cover" class="book-image"></iframe>
                         <a href="seemore.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Daydream</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/22954957.Hannah_Grace" target="_new">Hannah Grace</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/22954957.Hannah_Grace" target="_new">Hannah Grace</a></p>
                         <p><strong>Summary:</strong> Daydream follows Henry Turner, a junior in college who is reluctantly thrust into the role of ice hockey captain while also dealing with a difficult class and a demanding professor. Overwhelmed by his new responsibilities and academic struggles, Henry crosses paths with Halle Jacobs, a driven student managing her own challenges, from an intense academic schedule to writing a novel and working a job. When Henry crashes Halle's book club, the two form an unexpected connection, leading Halle to offer him tutoring despite her limited free time. As they spend more time together, Halle finds that her experiences with Henry spark inspiration for her writing, and Henry begins to see life beyond his pressures. Though they set rules to keep things strictly academic, their chemistry complicates everything, and soon they are navigating a growing bond that challenges their initial boundaries and opens up new possibilities for both of them.</p>
                         <p><strong>Genre:</strong> Romance,
                             Sports Romance,
@@ -292,13 +352,13 @@
             <section id="book12" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/seemore3.jpg">
-                        <img src="images/seemore3.jpg" alt="Book Title 12 Cover" class="book-image"></a>
+                        <iframe src="images/seemore3.jpg" frameborder="0"  class="book-image">
+                        <img src="images/seemore3.jpg" alt="Book Title 12 Cover" class="book-image"></iframe>
                         <a href="seemore.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Deep End</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/21098177.Ali_Hazelwood" target="_new">Ali Hazelwood</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/21098177.Ali_Hazelwood" target="_new">Ali Hazelwood</a></p>
                         <p><strong>Summary:</strong> Deep End by Ali Hazelwood is a steamy college romance featuring Scarlett Vandermeer, a dedicated platform diver at Stanford determined to recover from an injury and secure a spot in med school. She keeps a strict focus on her goals, avoiding distractions—especially relationships. However, Lukas Blomqvist, the disciplined, gold-medal-winning swim captain, disrupts her plans when a secret emerges, sparking a mutual arrangement. As Olympic pressures rise, so does their intense connection, turning what was supposed to be temporary into something much deeper, pushing Scarlett into emotional waters she never anticipated.​</p>
                         <p><strong>Genre:</strong> Romance,
                             Sports Romance,
@@ -317,13 +377,13 @@
             <section id="book13" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/seemore4.jpg">
-                        <img src="images/seemore4.jpg" alt="Book Title 13 Cover" class="book-image"></a>
+                        <iframe src="images/seemore4.jpg" frameborder="0"  class="book-image">
+                        <img src="images/seemore4.jpg" alt="Book Title 13 Cover" class="book-image"></iframe>
                         <a href="seemore.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Great Big Beautiful Life</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/13905555.Emily_Henry" target="_new">Emily Henry</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/13905555.Emily_Henry" target="_new">Emily Henry</a></p>
                         <p><strong>Summary:</strong> Great Big Beautiful Life by Emily Henry centers around two writers, Alice Scott and Hayden Anderson, who compete to capture the enigmatic story of Margaret Ives, a once-scandalous heiress now in seclusion. Alice, an optimistic dreamer hoping for her big writing break, and Hayden, a brooding Pulitzer Prize winner, find themselves on Little Crescent Island for a one-month challenge. Margaret offers them only bits of her history under strict nondisclosure agreements, and their rivalry intensifies amidst a budding romantic tension. As the story unfolds, the book explores themes of love, mystery, and ambition, leaving the fate of Margaret's biography and the writers' hearts in a suspenseful balance.</p>
                         <p><strong>Genre:</strong> Romance,
                             Contemporary,
@@ -340,13 +400,13 @@
             <section id="book14" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/seemore5.jpg">
-                        <img src="images/seemore5.jpg" alt="Book Title 14 Cover" class="book-image"></a>
+                        <iframe src="images/seemore5.jpg" frameborder="0"  class="book-image">
+                        <img src="images/seemore5.jpg" alt="Book Title 14 Cover" class="book-image"></iframe>
                         <a href="seemore.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Lost and Lassoed</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/16819854.Lyla_Sage" target="_new">Lyla Sage</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/16819854.Lyla_Sage" target="_new">Lyla Sage</a></p>
                         <p><strong>Summary:</strong> In Lost and Lassoed by Lyla Sage, Gus Ryder, a dependable and hardworking man, finds himself overwhelmed by life's pressures and in need of assistance. Unexpectedly, the only person available to help is Teddy, his little sister’s best friend and his long-time rival. As the two clash over their differences and deal with rising tensions, hidden feelings begin to surface. Caught between frustration and undeniable chemistry, they must decide if they will let their new emotions lead to something more or risk being burned by them.</p>
                         <p><strong>Genre:</strong> Romance,
                             Westerns,
@@ -364,13 +424,13 @@
             <section id="book15" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/seemore6.jpg">
-                        <img src="images/seemore6.jpg" alt="Book Title 15 Cover" class="book-image"></a>
+                        <iframe src="images/seemore6.jpg" frameborder="0"  class="book-image">
+                        <img src="images/seemore6.jpg" alt="Book Title 15 Cover" class="book-image"></iframe>
                         <a href="seemore.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Nothing Like the Movies</h2>
-                        <p><strong>Author:</strong><a href="https://www.goodreads.com/author/show/19322026.Lynn_Painter" target="_new">Lynn Painter</a></p>
+                        <p class="author"><strong>Author:</strong><a href="https://www.goodreads.com/author/show/19322026.Lynn_Painter" target="_new">Lynn Painter</a></p>
                         <p><strong>Summary:</strong> Nothing Like the Movies by Lynn Painter is a sequel to Better Than the Movies and follows the evolving relationship of Wes and Liz as they enter college life. Having faced a sudden breakup caused by a personal tragedy, Wes and Liz reunite at UCLA months later. Wes is determined to win Liz back using the romantic grand gestures she adores, but Liz remains guarded, having had her heart broken before. With a new male friend in Liz's life complicating things further, Wes must step up his efforts while wrestling with whether their love is truly over or can be rekindled. The story explores themes of young love, heartbreak, and personal growth in a college setting, and fans of romantic comedies will enjoy the heartfelt and often humorous journey.</p>
                         <p><strong>Genre:</strong> Romance,
                             Young Adult,
@@ -390,13 +450,13 @@
             <section id="book16" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/seemore7.jpg">
-                        <img src="images/seemore7.jpg" alt="Book Title 16 Cover" class="book-image"></a>
+                        <iframe src="images/seemore7.jpg" frameborder="0"  class="book-image">
+                        <img src="images/seemore7.jpg" alt="Book Title 16 Cover" class="book-image"></iframe>
                         <a href="seemore.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Not in Love</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/21098177.Ali_Hazelwood" target="_new">Ali Hazelwood</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/21098177.Ali_Hazelwood" target="_new">Ali Hazelwood</a></p>
                         <p><strong>Summary:</strong> Not in Love by Ali Hazelwood follows Rue Siebert, a biotech engineer whose stable life is shaken when Eli Killgore, a business tycoon leading a hostile takeover, enters the scene. The two are on opposite sides of the corporate battle, yet their undeniable chemistry leads to a secret, no-strings-attached affair. As they navigate their professional rivalry and growing attraction, their relationship faces a ticking clock tied to the success or failure of their companies. The story explores themes of forbidden romance, loyalty, and the tension between personal and professional desires​.</p>
                         <p><strong>Genre:</strong> Romance,
                             Contemporary,
@@ -416,13 +476,13 @@
             <section id="book17" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/seemore8.jpg">
-                        <img src="images/seemore8.jpg" alt="Book Title 17 Cover" class="book-image"></a>
+                        <iframe src="images/seemore8.jpg" frameborder="0"  class="book-image">
+                        <img src="images/seemore8.jpg" alt="Book Title 17 Cover" class="book-image"></iframe>
                         <a href="seemore.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>The Familiar</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/4575289.Leigh_Bardugo" target="_new">Leigh Bardugo</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/4575289.Leigh_Bardugo" target="_new">Leigh Bardugo</a></p>
                         <p><strong>Summary:</strong> In this gripping tale of adventure and self-discovery, Onyx Storm follows a fierce protagonist navigating a world fraught with danger and uncertainty. As she uncovers hidden truths and faces formidable adversaries, she must confront her own inner demons and the weight of her choices. Blending elements of fantasy and suspense, this novel explores themes of resilience, loyalty, and the power of friendship. With rich world-building and compelling characters, Onyx Storm takes readers on an unforgettable journey where courage is tested and destinies are forged.</p>
                         <p><strong>Genre:</strong> Fantasy,
                             Historical Fiction,
@@ -442,13 +502,13 @@
             <section id="book18" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/seemore9.jpg">
-                        <img src="images/seemore9.jpg" alt="Book Title 18 Cover" class="book-image"></a>
+                        <iframe src="images/seemore9.jpg" frameborder="0"  class="book-image">
+                        <img src="images/seemore9.jpg" alt="Book Title 18 Cover" class="book-image"></iframe>
                         <a href="seemore.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>The Songbird & the Heart of Stone</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/16170636.Carissa_Broadbent" target="_new">Carissa Broadbent</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/16170636.Carissa_Broadbent" target="_new">Carissa Broadbent</a></p>
                         <p><strong>Summary:</strong> The Songbird & the Heart of Stone by Carissa Broadbent is a dark, romantic fantasy set in the Crowns of Nyaxia series. The story follows Mische, a vampire who lost everything after being turned, including her humanity and the love of the sun god she once worshiped. She’s saved by Asar, the bastard prince of the House of Shadow, and is forced to join him on a dangerous mission to the underworld to resurrect the god of death. Along the way, Mische must navigate a growing forbidden attraction to Asar while dealing with betrayal and the wrath of gods. As she faces life-threatening trials, she must decide whether to follow the light of her sun god or embrace the dark love growing between her and Asar.</p>
                         <p><strong>Genre:</strong> Fantasy,
                             Romantasy,
@@ -468,13 +528,13 @@
             <section id="book19" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/seemore10.jpg">
-                        <img src="images/seemore10.jpg" alt="Book Title 19 Cover" class="book-image"></a>
+                        <iframe src="images/seemore10.jpg" frameborder="0"  class="book-image">
+                        <img src="images/seemore10.jpg" alt="Book Title 19 Cover" class="book-image"></iframe>
                         <a href="seemore.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Say You'll Remember Me</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/18446724.Abby_Jimenez" target="_new">Abby Jimenez</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/18446724.Abby_Jimenez" target="_new">Abby Jimenez</a></p>
                         <p><strong>Summary:</strong>Say You'll Remember Me by Katie McGarry tells the story of Drix, a young man just released from juvenile detention, and Elle, a high school student from a wealthy family. Drix is trying to rebuild his life, but his past haunts him, while Elle is struggling with personal challenges. Their lives intersect when they form a bond that challenges societal expectations and their own insecurities. The novel explores themes of redemption, love, and second chances as the two navigate their differences and grow closer.</p>
                         <p><strong>Genre:</strong> Romance,
                             Contemporary Romance,
@@ -490,5 +550,8 @@
             
         </main>
     </div>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+    <script src="jsfiles/collection.js"></script>
+    <script src="jsfiles/darkmode.js"></script>
 </body>
 </html>

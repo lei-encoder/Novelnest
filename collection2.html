@@ -12,9 +12,67 @@
         <p>Welcome to the Novelnest Book Library! Dive into a world of books, authors, and genres, and uncover your next favorite read.</p>
     </header>
 
+    <div class="sidebar">
+        <div class="dots">
+          <img src="images/dots.png" alt="dots" />
+        </div>
+        <div class="profile">
+          <ion-icon name="person-outline"></ion-icon>
+        </div>
+        <ul>
+          <span>Home</span>
+          <li>
+            <a href="main.html">
+              <ion-icon name="home-outline"></ion-icon>
+              <p>Home</p>
+            </a>
+          </li>
+          <li>
+            <a href="book.html">
+              <ion-icon name="stats-chart-outline"></ion-icon>
+              <p>Prices</p>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <span>Content</span>
+          <li class="noti">
+            <a href="notification.html">
+              <ion-icon name="notifications-outline"></ion-icon>
+              <p>Notifications</p>
+            </a>
+          </li>
+          <li>
+            <a href="wallet.html">
+              <ion-icon name="wallet-outline"></ion-icon>
+              <p>Wallets</p>
+            </a>
+          </li>
+          <li class="likes">
+            <a href="team.html">
+              <ion-icon name="heart-outline"></ion-icon>
+              <p>Team</p>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <span>Custom</span>
+          <li class="switch-theme">
+            <a href="#">
+              <ion-icon name="moon-outline"></ion-icon>
+              <p>Dark Mode</p>
+            </a>
+          </li>
+          <li>
+            <a href="index.html">
+              <ion-icon name="log-out-outline"></ion-icon>
+              <p>Logout</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     <div class="container">
-        <!-- Sidebar for Table of Contents -->
-        <aside class="sidebar">
+        <aside class="sidebar2">
             <h2>Contents</h2>
             <nav>
                 <ul>
@@ -54,16 +112,22 @@
             <section id="book1" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/popular1.jpg">
-                        <img src="images/popular1.jpg" alt="Book Title 1 Cover" class="book-image">
-                    </a>
+                      
+<iframe src="images/popular1.jpg" frameborder="0"  class="book-image">
+
+    <img src="images/popular1.jpg" alt="Book Title 1 Cover" class="book-image">
+                    </iframe>
+
+<!-- Iframe for displaying the large image -->
+<iframe id="imageFrame" style="width: 100%; height: 500px; border: none; margin-top: 20px;"></iframe>
+
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Funny Story</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/13905555.Emily_Henry" target="_new"> Emily Henry</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/13905555.Emily_Henry" target="_new"> Emily Henry</a></p>
                         <p><strong>Summary:</strong> 
-                            "Funny Story" by Emily Henry follows Daphne, who, after being left by her fiancé for his childhood best friend, moves in with Miles, Petra's ex. 
+                            Funny Story by Emily Henry follows Daphne, who, after being left by her fiancé for his childhood best friend, moves in with Miles, Petra's ex. 
                             Initially awkward, their relationship evolves as they bond over shared heartbreak. Together, they create fake social media posts about their summer adventures, but as they pretend,
                              real feelings begin to emerge. The story combines humor and genuine emotion, showcasing the characters' journeys of healing and self-discovery.</p>
                         <p><strong>Genre:</strong> Romance, Fiction, Contemporary, Audiobook, Contemporary Romance, Adult, Chick Lit, Adult Fiction, Humor, Book Club</p>
@@ -74,13 +138,13 @@
             <section id="book2" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/popular2.jpg">
-                        <img src="images/popular2.jpg" alt="Book Title 2 Cover" class="book-image"></a>
+                        <iframe src="images/popular2.jpg" frameborder="0"  class="book-image">
+                        <img src="images/popular2.jpg" alt="Book Title 2 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>The Wowen</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/54493.Kristin_Hannah" target="_new"> Kristin Hannah</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/54493.Kristin_Hannah" target="_new"> Kristin Hannah</a></p>
                         <p><strong>Summary:</strong>  Set against the backdrop of the Vietnam War, Amid the Vietnam War follows a young woman's journey as she discovers her strength and sense of identity in a time of upheaval. 
                             As she faces the challenges of a rapidly changing society, she defies expectations and finds resilience through the bonds of friendship,
                             which empower her to endure and grow. This powerful story highlights themes of courage, self-discovery, and the unbreakable ties that form in the face of adversity.</p>
@@ -92,13 +156,13 @@
             <section id="book3" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/popular3.jpg">
-                        <img src="images/popular3.jpg" alt="Book Title 3 Cover" class="book-image"></a>
+                        <iframe src="images/popular3.jpg" frameborder="0"  class="book-image">
+                        <img src="images/popular3.jpg" alt="Book Title 3 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Just For The Summer</h2>
-                        <p><strong>Author:</strong><a href="https://www.goodreads.com/author/show/18446724.Abby_Jimenez" target="_new"> Abby Jimenez</a></p>
+                        <p class="author"><strong>Author:</strong><a href="https://www.goodreads.com/author/show/18446724.Abby_Jimenez" target="_new"> Abby Jimenez</a></p>
                         <p><strong>Summary:</strong> Just for the Summer is a captivating novel that follows a woman who, during a carefree summer romance, is compelled to confront past heartbreaks.
                              As the warm days unfold, she finds herself unexpectedly opening up to the possibility of love again. The narrative blends humor and heartfelt emotions, taking readers on a journey of self-discovery, healing, and the transformative power of new beginnings. 
                              The story beautifully captures the complexities of moving forward while holding onto the lessons learned from past relationships.                           
@@ -111,13 +175,13 @@
             <section id="book4" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/popular4.jpg"> 
-                        <img src="images/popular4.jpg" alt="Book Title 4 Cover" class="book-image"></a>
+                        <iframe src="images/popular4.jpg" frameborder="0"  class="book-image">
+                        <img src="images/popular4.jpg" alt="Book Title 4 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>First Lie Wins</h2>
-                        <p><strong>Author:</strong><a href="https://www.goodreads.com/author/show/5317545.Ashley_Elston" target="_new"> Ashley Elston</a></p>
+                        <p class="author"><strong>Author:</strong><a href="https://www.goodreads.com/author/show/5317545.Ashley_Elston" target="_new"> Ashley Elston</a></p>
                         <p><strong>Summary:</strong> 
                             First Lie Wins is a gripping thriller by Ashley Elston that takes readers on a suspenseful journey through a dangerous game of lies and deception. The story centers on Evie,
                              a cunning con artist whose life revolves around assuming new identities to complete high-risk assignments. Working under the watchful eye of Mr. Smith, a shadowy and manipulative figure, Evie must balance her morally complex missions while facing the emotional and 
@@ -130,13 +194,13 @@
             <section id="book5" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/popular5.jpg">
-                        <img src="images/popular5.jpg" alt="Book Title 5 Cover" class="book-image"></a>
+                        <iframe src="images/popular5.jpg" frameborder="0"  class="book-image">
+                        <img src="images/popular5.jpg" alt="Book Title 5 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>The Teacher</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/7244758.Freida_McFadden" target="_new"> Freida McFadden</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/7244758.Freida_McFadden" target="_new"> Freida McFadden</a></p>
                         <p><strong>Summary:</strong> 
                             The Teacher is a suspenseful novel about the arrival of a mysterious teacher at a school, whose presence begins to reveal dark, 
                             long-hidden secrets. As this enigmatic figure delves deeper into the school’s past, both students and staff are drawn into an escalating web of intrigue and tension. 
@@ -151,13 +215,13 @@
             <section id="book6" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/popular6.jpg">
-                        <img src="images/popular6.jpg" alt="Book Title 6 Cover" class="book-image"></a>
+                        <iframe src="images/popular6.jpg" frameborder="0"  class="book-image">
+                        <img src="images/popular6.jpg" alt="Book Title 6 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>House of Flame and Shadow.</h2>
-                        <p><strong>Author:</strong><a href="https://www.goodreads.com/author/show/3433047.Sarah_J_Maas" target="_new"> Sarah J. Maas</a></p>
+                        <p class="author"><strong>Author:</strong><a href="https://www.goodreads.com/author/show/3433047.Sarah_J_Maas" target="_new"> Sarah J. Maas</a></p>
                         <p><strong>Summary:</strong> House of Flame and Shadow is an engaging novel that plunges readers into a magical world filled with dark challenges and mythical threats. 
                             The story centers around a young woman who must confront her past as she battles to protect her loved ones. Throughout her journey, she navigates the complexities of her emotions 
                              and the danger surrounding her, ultimately embracing her strength and resilience.
@@ -171,13 +235,13 @@
             <section id="book7" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/popular7.jpg">
-                        <img src="images/popular7.jpg" alt="Book Title 7 Cover" class="book-image"></a>
+                        <iframe src="images/popular7.jpg" frameborder="0"  class="book-image">
+                        <img src="images/popular7.jpg" alt="Book Title 7 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Bride</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/21098177.Ali_Hazelwood" target="_new"> Ali Hazelwood</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/21098177.Ali_Hazelwood" target="_new"> Ali Hazelwood</a></p>
                         <p><strong>Summary:</strong> Bride by Ali Hazelwood tells the story of a woman who unexpectedly enters a whirlwind romance that forces her to reevaluate her views on love and marriage. As she navigates the complexities of her feelings and the relationship, she confronts her beliefs about commitment and what it truly means to be in a partnership. 
                             The novel blends humor and emotion, exploring themes of self-discovery and the transformative power of love in modern relationships.</p>
                         <p><strong>Genre:</strong> Romance, Fantasy, Paranormal, Vampires, Romantasy, Paranormal Romance, Audiobook, Adult, Fiction, Werewolves</p>
@@ -188,13 +252,13 @@
             <section id="book8" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/popular8.jpg">
-                        <img src="images/popular8.jpg" alt="Book Title 8 Cover" class="book-image"></a>
+                        <iframe src="images/popular8.jpg" frameborder="0"  class="book-image">
+                        <img src="images/popular8.jpg" alt="Book Title 8 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>The Housemaid Is Watching</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/7244758.Freida_McFadden" target="_new"> Freida McFadden</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/7244758.Freida_McFadden" target="_new"> Freida McFadden</a></p>
                         <p><strong>Summary:</strong> The Housemaid is Watching by Freida McFadden is a gripping thriller that follows a housemaid who stumbles upon unsettling secrets about her employers. As she delves deeper into their lives, she finds herself caught in a web of deception and danger, leading to a chilling struggle for her own survival. The narrative expertly weaves suspense and intrigue, 
                             keeping readers on the edge of their seats as the protagonist confronts the dark truths hidden behind the facade of her employers’ seemingly perfect life.</p>
                         <p><strong>Genre:</strong> Thriller, Mystery, Mystery Thriller, Fiction, Suspense, Audiobook, Psychological Thriller, Crime, Adult, Contemporary</p>
@@ -205,13 +269,13 @@
             <section id="book9" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/popular9.jpg">
-                        <img src="images/popular9.jpg" alt="Book Title 9 Cover" class="book-image"></a>
+                        <iframe src="images/popular9.jpg" frameborder="0"  class="book-image">
+                        <img src="images/popular9.jpg" alt="Book Title 9 Cover" class="book-image"></iframe>
                         <a href="book.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>The Paradise Problem</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/6556689.Christina_Lauren" target="_new"> Christina Lauren</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/6556689.Christina_Lauren" target="_new"> Christina Lauren</a></p>
                         <p><strong>Summary:</strong> The Paradise Problem by Christina Lauren is a contemporary romance that follows two individuals who are thrown together on a tropical island while 
                             grappling with personal challenges. As they attempt to navigate "the paradise problem"—a metaphor for their individual struggles—they unexpectedly discover love and embark on journeys of self-discovery. 
                             The lush setting provides a backdrop for their evolving relationship, blending humor and heartfelt moments as they learn to embrace vulnerability and connection.</p>
@@ -223,13 +287,13 @@
             <section id="book10" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/see1.jpg">
-                        <img src="images/see1.jpg" alt="Book Title 10 Cover" class="book-image"></a>
+                        <iframe src="images/popular10.jpg" frameborder="0"  class="book-image">
+                        <img src="images/see1.jpg" alt="Book Title 10 Cover" class="book-image"></a></iframe>
                         <a href="seemore2.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>The Off-Limits Rule</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/19682177.Sarah_Adams" target="_new">Sarah Adams</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/19682177.Sarah_Adams" target="_new">Sarah Adams</a></p>
                         <p><strong>Summary:</strong> The Off-Limits Rule by Sarah Adams is a lighthearted romance featuring Lucy Marshall, a single mother returning to her hometown of Nashville with her young son after a failed stint in Atlanta. Staying with her brother Drew, Lucy tries to rebuild her life, but she finds herself increasingly attracted to Cooper, Drew’s best friend. Although Drew has declared Cooper off-limits, the chemistry between Lucy and Cooper is undeniable. The story follows their sweet yet forbidden relationship as Lucy grapples with her responsibilities as a mother and her desires for a new chance at love, while Cooper proves he’s more than just a charming flirt. The book blends humor and heartfelt moments, highlighting themes of self-discovery and the complexities of familial and romantic relationships.</p>
                         <p><strong>Genre:</strong> Audiobook,
                             Contemporary,
@@ -249,13 +313,13 @@
             <section id="book11" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/see2.jpg">
-                        <img src="images/see2.jpg" alt="Book Title 11 Cover" class="book-image"></a>
+                        <iframe src="images/see2.jpg" frameborder="0"  class="book-image">
+                        <img src="images/see2.jpg" alt="Book Title 11 Cover" class="book-image"></iframe>
                         <a href="seemore2.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Slap Shot Surprise</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/7095467.Melanie_Harlow" target="_new">Melanie Harlow</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/7095467.Melanie_Harlow" target="_new">Melanie Harlow</a></p>
                         <p><strong>Summary:</strong> Slap Shot Surprise by Melanie Harlow tells the story of Mabel Buckley and Joe Lupo. Mabel, a small-town woman with a knack for getting nervous hiccups, and Joe, a dedicated and charming hockey player, meet on a flight where Mabel humorously lists all the things she hasn’t done, thinking they might crash. Their lives collide once more at a wedding, where undeniable sparks fly between them. What starts as a spontaneous connection quickly becomes serious when an unexpected surprise challenges them both to reconsider their life plans and feelings. The novel weaves humor, romance, and heartfelt moments, exploring themes of love and the power of taking chances.</p>
                         <p><strong>Genre:</strong> Sports Romance, 
                             Romance, 
@@ -274,13 +338,13 @@
             <section id="book12" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/see3.jpg">
-                        <img src="images/see3.jpg" alt="Book Title 12 Cover" class="book-image"></a>
+                        <iframe src="images/see3.jpg" frameborder="0"  class="book-image">
+                        <img src="images/see3.jpg" alt="Book Title 12 Cover" class="book-image"></iframe>
                         <a href="seemore2.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>The Book of Witching</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/16582738.C_J_Cooke" target="_new">C.J. Cooke</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/16582738.C_J_Cooke" target="_new">C.J. Cooke</a></p>
                         <p><strong>Summary:</strong> The Book of Witching by C.J. Cooke is a haunting story that intertwines elements of horror and historical fiction. The narrative follows Clem, a mother who receives devastating news that her daughter, Erin, is unconscious in the hospital after a hiking trip on the Orkney Islands. The incident leaves Erin's boyfriend dead, and her best friend missing. When Erin awakens, she no longer recognizes Clem and insists that her name is Nyx. Determined to uncover the truth, Clem travels to the site of the accident and discovers a chilling connection to an ancient tale of witchcraft and vengeance. As she delves deeper, she must confront whether Erin’s behavior is due to trauma or a supernatural curse linked to the Orkney Islands' dark past.</p>
                         <p><strong>Genre:</strong> Horror,
                             Fantasy,
@@ -300,13 +364,13 @@
             <section id="book13" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/see4.jpg">
-                        <img src="images/see4.jpg" alt="Book Title 13 Cover" class="book-image"></a>
+                        <iframe src="images/see4.jpg" frameborder="0"  class="book-image">
+                        <img src="images/see4.jpg" alt="Book Title 13 Cover" class="book-image"></iframe>
                         <a href="seemore2.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Holding the Reins</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/47309944.Paisley_Hope" target="_new">Paisley Hope</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/47309944.Paisley_Hope" target="_new">Paisley Hope</a></p>
                         <p><strong>Summary:</strong> Holding the Reins by Paisley Hope centers on Cecilia “CeCe” Ashby, who moves back to her family’s equestrian ranch in Laurel Creek, Kentucky, to heal from past hardships and rebuild her life. There, she reconnects with Nash Carter, a retired hockey star and charming businessman who was once her brothers' childhood friend. As old banter and sparks between CeCe and Nash ignite into something more, they must navigate new beginnings, healing, and the challenges of love in their close-knit small town. The story combines themes of resilience, romance, and the power of finding home again.</p>
                         <p><strong>Genre:</strong> Romance,
                             Westerns,
@@ -326,13 +390,13 @@
             <section id="book14" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/see5.jpg">
-                        <img src="images/see5.jpg" alt="Book Title 14 Cover" class="book-image"></a>
+                        <iframe src="images/see5.jpg" frameborder="0"  class="book-image">
+                        <img src="images/see5.jpg" alt="Book Title 14 Cover" class="book-image"></a></iframe>
                         <a href="seemore2.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>The Stone Witch of Florence</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/47365465.Anna_Rasche" target="_new">Anna Rasche</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/47365465.Anna_Rasche" target="_new">Anna Rasche</a></p>
                         <p><strong>Summary:</strong> The Stone Witch of Florence unfolds a tale of ancient curses and secrets in the mystical heart of Florence. The story follows a young historian who stumbles upon a series of enigmatic relics linked to an old, infamous witch. As she digs deeper, she discovers a haunting connection between the past and present, unleashing dark forces she must race against time to understand and confront. With the city’s rich history and folklore entwined, this captivating narrative blends suspense, magic, and the power of unraveling long-buried truths.</p>
                         <p><strong>Genre:</strong> Historical Fiction,
                             Fantasy,
@@ -352,13 +416,13 @@
             <section id="book15" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/see6.jpg">
-                        <img src="images/see6.jpg" alt="Book Title 15 Cover" class="book-image"></a>
+                        <iframe src="images/see6.jpg" frameborder="0"  class="book-image">
+                        <img src="images/see6.jpg" alt="Book Title 15 Cover" class="book-image"></iframe>
                         <a href="seemore2.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Blood Over Bright Haven</h2>
-                        <p><strong>Author:</strong><a href="https://www.goodreads.com/author/show/15735471.M_L_Wang" target="_new"> M.L. Wang</a></p>
+                        <p class="author"><strong>Author:</strong><a href="https://www.goodreads.com/author/show/15735471.M_L_Wang" target="_new"> M.L. Wang</a></p>
                         <p><strong>Summary:</strong> Blood Over Bright Haven by M.L. Wang is a fantasy novel set in a world where two main characters, Sciona and Thomil, navigate personal and societal challenges. Sciona is an ambitious mage determined to be the first woman in the Tiranian High Magistry, while Thomil, a member of the nomadic Caldonnae tribe, is forced to work as a janitor due to his tribe's displacement by a deadly disease known as the Blight. The story explores themes of magic, societal inequality, and personal identity, with the characters' lives intertwining as they confront the harsh realities of their society​</p>
                         <p><strong>Genre:</strong> Fantasy,
                             Adult,
@@ -378,13 +442,13 @@
             <section id="book16" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/see7.jpg">
-                        <img src="images/see7.jpg" alt="Book Title 16 Cover" class="book-image"></a>
+                        <iframe src="images/see7.jpg" frameborder="0"  class="book-image">
+                        <img src="images/see7.jpg" alt="Book Title 16 Cover" class="book-image"></iframe>
                         <a href="seemore2.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>A Reign of Rose</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/22947235.Kate_Golden" target="_new">Kate Golden</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/22947235.Kate_Golden" target="_new">Kate Golden</a></p>
                         <p><strong>Summary:</strong> A Reign of Rose by Kate Golden is the conclusion to the Sacred Stones trilogy, following the struggles of Kane Ravenwood, King of Onyx Kingdom, and Arwen Valondale as they fight to defeat the powerful Fae King, Lazarus. Kane is willing to sacrifice himself to fulfill the prophecy and kill his father, while Arwen is determined to destroy Lazarus and save both realms from doom. As their paths intertwine, both characters must face immense personal challenges and make sacrifices to save the world, even if it costs them everything.</p>
                         <p><strong>Genre:</strong> Fantasy,
                             Romantasy,
@@ -404,13 +468,13 @@
             <section id="book17" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/see8.jpg">
-                        <img src="images/see8.jpg" alt="Book Title 17 Cover" class="book-image"></a>
+                        <iframe src="images/see8.jpg" frameborder="0"  class="book-image">
+                        <img src="images/see8.jpg" alt="Book Title 17 Cover" class="book-image"></iframe>
                         <a href="seemore2.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>Never Never</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/5430144.Colleen_Hoover" target="_new">Colleen Hoover</a>, <a href="https://www.goodreads.com/author/show/5410816.Tarryn_Fisher" target="_new"> Tarryn Fisher</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/5430144.Colleen_Hoover" target="_new">Colleen Hoover</a>, <a href="https://www.goodreads.com/author/show/5410816.Tarryn_Fisher" target="_new"> Tarryn Fisher</a></p>
                         <p><strong>Summary:</strong> Never Never by Colleen Hoover and Tarryn Fisher follows the intense journey of two high school students, Charlie and Silas, who wake up one day with no memory of who they are or how they got there. With their memories wiped every 48 hours, they must rely on each other to uncover the truth about their pasts and their mysterious condition. As they investigate, they unravel deep secrets about their lives, and the story delves into themes like love, identity, and the impact of betrayal. The book explores how memory loss affects self-discovery and the resilience of the human spirit as they try to rebuild their connection.</p>
                         <p><strong>Genre:</strong> Romance,
                             Young Adult,
@@ -430,13 +494,13 @@
             <section id="book18" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/see9.jpg">
-                        <img src="images/see9.jpg" alt="Book Title 18 Cover" class="book-image"></a>
+                        <iframe src="images/see9.jpg" frameborder="0"  class="book-image">
+                        <img src="images/see9.jpg" alt="Book Title 18 Cover" class="book-image"></iframe>
                         <a href="seemore2.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>If I Stopped Haunting You</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/23432845.Colby_Wilkens" target="_new">Colby Wilkens</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/23432845.Colby_Wilkens" target="_new">Colby Wilkens</a></p>
                         <p><strong>Summary:</strong> If I Stopped Haunting You by Colby Wilkens is a fun, fast-paced enemies-to-lovers romance with a paranormal twist. Penelope Skinner, a horror author, is invited to a writers' retreat at a haunted Scottish castle after a public feud with fellow author Neil Storm. They have unresolved tension, as Pen threw a book at Neil, and their past rivalry is full of animosity. However, as they try to avoid each other, they find themselves trapped in a real ghost story, forcing them to confront their feelings while dealing with supernatural events.</p>
                         <p><strong>Genre:</strong> Romance,
                             Paranormal,
@@ -456,13 +520,13 @@
             <section id="book19" class="book-section">
                 <div class="book-layout">
                     <div class="book-image-container">
-                        <a href="images/see10.jpg">
-                        <img src="images/see10.jpg" alt="Book Title 19 Cover" class="book-image"></a>
+                        <iframe src="images/see10.jpg" frameborder="0"  class="book-image">
+                        <img src="images/see10.jpg" alt="Book Title 19 Cover" class="book-image"></iframe>
                         <a href="seemore2.html" class="store-button" target="_blank">Go to Store</a>
                     </div>
                     <div class="book-info">
                         <h2>The Fury of the Gods</h2>
-                        <p><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/5898355.John_Gwynne" target="_new">John Gwynne</a></p>
+                        <p class="author"><strong>Author:</strong> <a href="https://www.goodreads.com/author/show/5898355.John_Gwynne" target="_new">John Gwynne</a></p>
                         <p><strong>Summary:</strong> The Fury of the Gods by John Gwynne is the final book in The Bloodsworn Saga, where the epic battle between gods and mortals reaches its peak. Lik-Rifa, the dragon god, has nearly conquered the world, while Varg and his allies prepare for a final stand at Snakavik. The book blends intense action and personal character arcs, especially Varg's emotional journey as he seeks revenge for his sister's death. Alongside the bloody battles, moments of deep emotional connection provide a poignant contrast to the brutal world.</p>
                         <p><strong>Genre:</strong> Fantasy,
                             Fiction,
@@ -480,5 +544,8 @@
             </section>
         </main>
     </div>
+    <script src="jsfiles/darkmode.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+    <script src="jsfiles/collection.js"></script>
 </body>
 </html>
