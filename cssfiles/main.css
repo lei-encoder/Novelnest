@@ -339,12 +339,16 @@ body.dark-mode .message-text {
 .close-button {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 20px;
   font-size: 30px;
   color: #fff;
   background: transparent;
   border: none;
   cursor: pointer;
+}
+
+.close-button:hover {
+  color: #f00;  
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");

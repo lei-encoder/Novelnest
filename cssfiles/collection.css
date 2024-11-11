@@ -120,10 +120,13 @@ body {
   background: transparent;
   border: none;
   font-size: 24px;
-  color: #333;
+  color: white;
   cursor: pointer;
 }
 
+.close-button:hover {
+  color: #f00;  
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
 * {
