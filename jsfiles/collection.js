@@ -10,3 +10,21 @@ openImageLink.addEventListener('click', function(event) {
     iframe.src = imageSrc;  // Set iframe source to image URL
     iframe.style.display = 'block';  // Show the iframe
 });
+
+// Function to open the window with the specified image
+function openWindow(imageSrc) {
+    const overlayWindow = document.getElementById("overlay-window");
+    const iframe = document.getElementById("window-iframe");
+
+    overlayWindow.style.display = "flex";
+    iframe.src = imageSrc; // Load the image in the iframe
+}
+
+// Function to close the modal
+function closeWindow() {
+    const overlayWindow = document.getElementById("overlay-window");
+    const iframe = document.getElementById("window-iframe");
+
+    overlayWindow.style.display = "none";
+    iframe.src = ""; // Clear iframe source
+}

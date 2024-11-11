@@ -66,14 +66,6 @@ body {
     text-decoration: underline;
 }
 
-/* Style the iframe */
-#imageFrame {
-    display: none;  /* Initially hidden */
-    width: 100%;
-    height: 500px;
-    border: none;
-    margin-top: 20px;
-}
 
 /* Optional: You can style the image thumbnail */
 .book-image {
@@ -82,9 +74,58 @@ body {
     cursor: pointer;
 }
 
+/* Full-screen overlay */
+.overlay-window {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+
+.window-content {
+  position: relative;
+  width: 80%;
+  max-width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.7); 
+  backdrop-filter: blur(10px); /* Blur background effect */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+.window-iframe {
+  width: 100%; 
+  height: 100%; 
+  object-fit: contain; /* Center and contain the image */
+  border: none;
+  margin-left: 0px;
+}
+
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
-/* Start Global Rules */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
