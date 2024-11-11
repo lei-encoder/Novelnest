@@ -121,5 +121,24 @@ window.onload = function () {
 };
 
 
+function openWindow(imageSrc) {
+  // Find the iframe and set its src to the clicked image's source
+  var iframe = document.getElementById("window-iframe");
+  iframe.src = imageSrc; // Sets the src of the iframe to the image URL
+
+  // Show the overlay window (modal)
+  var overlay = document.getElementById("overlay-window");
+  overlay.style.display = "block";
+}
+
+function closeWindow() {
+  // Hide the overlay window when the close button is clicked
+  var overlay = document.getElementById("overlay-window");
+  overlay.style.display = "none";
+
+  // Clear the iframe src to stop playing video/image
+  var iframe = document.getElementById("window-iframe");
+  iframe.src = "";
+}
 
 

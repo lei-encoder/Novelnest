@@ -30,10 +30,17 @@
     <hr class="company2-line">
     
     <div class="image-text-container">
-        <iframe src="images/book1.webp"  frameborder="0" class="front-image">
-
-        <img src="images/book1.webp" alt="Description" class="front-image">
-    </iframe>
+        <img src="images/book1.webp" alt="Description" class="front-image" onclick="openWindow('images/book1.webp')" style="cursor: pointer;">
+ 
+    
+    <!-- Modal (Overlay) -->
+    <div id="overlay-window" class="overlay-window">
+        <div class="window-content">
+            <iframe id="window-iframe" src="" frameborder="0" class="window-iframe"></iframe>
+            <button onclick="closeWindow()" class="close-button">&times;</button>
+        </div>
+    </div>
+    
         
         <div class="company-text">
             <div class="heading">
@@ -56,23 +63,34 @@
     
     <div class="gallery-container">
         <div class="gallery">
-            <a href="images/slide1.jpg">
-            <img src="images/slide1.jpg" alt="Image 1"></a>
-            <a href="images/slide 2.jpg">
-            <img src="images/slide 2.jpg" alt="Image 2"></a>
-            <a href="images/slide 3.jpg">
-            <img src="images/slide 3.jpg" alt="Image 3"></a>
-            <a href="images/slide  4.jpg">
-            <img src="images/slide  4.jpg" alt="Image 4"></a>
-            <a href="images/slide 5.jpg">
-            <img src="images/slide 5.jpg" alt="Image 5"></a>
+            
+            <img src="images/slide1.jpg" alt="Image 1" class="book-image" onclick="openWindow('images/slide1.jpg')" style="cursor: pointer;">
+            <img src="images/slide 2.jpg" alt="Image 2" class="book-image" onclick="openWindow('images/slide 2.jpg')" style="cursor: pointer;">
+            <img src="images/slide 3.jpg" alt="Image 3" class="book-image" onclick="openWindow('images/slide 3.jpg')" style="cursor: pointer;">          
+            <img src="images/slide 4.jpg" alt="Image 4" class="book-image" onclick="openWindow('images/slide 4.jpg')" style="cursor: pointer;">            
+            <img src="images/slide 5.jpg" alt="Image 5" class="book-image" onclick="openWindow('images/slide 5.jpg')" style="cursor: pointer;">
         </div>
     </div>
+    
+    <div id="overlay-window" class="overlay-window">
+        <div class="window-content">
+            <iframe id="window-iframe" src="" frameborder="0" class="window-iframe"></iframe>
+            <button onclick="closeWindow()" class="close-button">&times;</button>
+        </div>
+    </div>
+    
     
     <hr class="company3-line">
     
     <div class="image2-container">
-        <img src="images/sidepic.webp" class="side-page">
+        <img src="images/sidepic.webp" class="side-page" onclick="openWindow('images/sidepic.webp')" style="cursor: pointer;">
+    </div>
+    
+    <div id="overlay-window" class="overlay-window">
+        <div class="window-content">
+            <iframe id="window-iframe" src="" frameborder="0" class="window-iframe"></iframe>
+            <button onclick="closeWindow()" class="close-button">&times;</button>
+        </div>
     </div>
     
  
